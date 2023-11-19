@@ -3,10 +3,10 @@ import '../App/App.css'
 function AllMoviesPage() {
     return (
         <>
-            <NavBarPages/>
+            {/* <NavBarPages/>
             <div className="pages-container">
                 <Footer />
-            </div>
+            </div> */}
 
 
 
