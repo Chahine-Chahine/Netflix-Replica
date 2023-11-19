@@ -1,0 +1,79 @@
+.navBarPages{
+    width:100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 30px;
+    color: white;
+}
+
+.navBarPages,
+.navBarPages-left,
+.navBarPages-left img,
+.navBarPages-right,
+.navBarPages-text{
+    background-color: black;
+}
+
+
+.navBarPages-left img{
+    width: 9vw;  
+    cursor: pointer;
+}
+
+.navBarPages-right{
+    display: flex;
+    gap: 8px;
+    align-items: center; 
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.btn-login , .btn-signIn{
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+
+.btn-login{
+    padding: 10px 25px;
+    background-color: 	#E50914;
+
+}
+.btn-signIn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 7px 20px;
+  
+}
+
+.btn-login:hover{
+    background-color: 	#f62a34;
+}
+
+.btn-signIn:hover{
+    background-color: rgba(255, 255, 255,0.2);
+}
+
+
+
+/* media query */
+@media only screen and (max-width: 800px) {
+
+    .navBarPages{
+        padding: 8px;
+    }
+
+    .navBarPages-text{
+        display: none;
+    
+    }
+
+    .navBarPages-left img{
+        width: 30vw;
+    }
+    
+  }

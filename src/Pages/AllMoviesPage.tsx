@@ -1,11 +1,13 @@
 import './App.css'
+import NavBarPages from '../Components/NavBar/NavbarPages';
 
 function AllMoviesPage() {
     return (
         <>
-            <div className='center'>
+            <NavBarPages />
+            {/* <div className='center'>
                 <p className='purple-bold'>All Movies Page.<br></br>Let's Do It Team!</p>
-            </div>
+            </div> */}
         </>
     );
 }
