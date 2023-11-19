@@ -1,9 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllMoviesPage from '../AllMoviesPage/AllMoviesPage';
 import MoviePreview from '../MoviePreview/MoviePreview';
-
-import Message from '../../Components/Message';
-import './App.css'
+import '../App/App.css'
 
 
 function App() {
