@@ -14,11 +14,14 @@ function MoviePreview() {
 
     return (
         <>
+
             <NavBarPages />
             <div className="pages-container">
                 <Footer />
             </div>
             {/* <Popular/> */}
+
+            <h1>HOMEPAGE</h1>
           
         </>
 

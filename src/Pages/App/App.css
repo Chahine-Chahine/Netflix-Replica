@@ -33,3 +33,10 @@ h1{
   align-items: center;
   text-align: center;
 }
+
+.homepage-container{
+  margin: 0px 150px;
+}
+.homepage-container .links{
+  text-decoration: underline;
+}

@@ -1,27 +1,29 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllMoviesPage from '../AllMoviesPage/AllMoviesPage';
 import MoviePreview from '../MoviePreview/MoviePreview';
+import HomePage from '../HomePage/HomePage';
+
+
 import '../App/App.css'
+import '../../Components/Common/Footer.css'
+import '../../Components/Common/Footer.css'
+import '../../Components/Common/NavBarPages.css'
 
 
 function App() {
   return (
-    <>
 
-      {/* Route Configuration */}
       <div>
         <BrowserRouter>
           <Routes>
+          <Route path="/" element={<HomePage />} />
             <Route path="/AllMoviesPage" element={<AllMoviesPage />} />
             <Route path="/MoviePreview" element={<MoviePreview />} />
           </Routes>
         </BrowserRouter>
       </div>
 
-      <div className='center'>
-        <p className='purple-bold'>A Big Hello from Chahine Team.<br></br>Let's Do This!</p>
-      </div>
-    </>
+       
   );
 
 }

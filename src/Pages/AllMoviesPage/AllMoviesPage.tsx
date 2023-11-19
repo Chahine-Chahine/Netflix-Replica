@@ -1,4 +1,8 @@
-import '../App/App.css'
+// import '../App/App'
+import NavBarPages from '../../Components/Common/NavbarPages';
+import Footer from "../../Components/Common/Footer"
+// import  '../../Components/Common/Footer.css'
+
 
 function AllMoviesPage() {
     return (

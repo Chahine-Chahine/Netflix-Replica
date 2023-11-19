@@ -6,6 +6,8 @@ import { SlArrowDown } from "react-icons/sl";
 import { FaGlobe } from "react-icons/fa";
 import  './Footer.css'
 
+const arr1_links=["FAQ","Investor Relations","Privacy","Speed Test"]
+const list1_links = arr1_links.map(arr1_link => <a href='#'>{arr1_link}</a>);
 
 function FooterPages() {
     return (
@@ -16,10 +18,11 @@ function FooterPages() {
                 <div className="links-container">
 
                     <div className="links">
-                        <a href="#">FAQ</a>
+                        {/* <a href="#">FAQ</a>
                         <a href="#">Investor Relations</a>
                         <a href="#">Privacy</a>
-                        <a href="#">Speed Test</a>
+                        <a href="#">Speed Test</a> */}
+                        {list1_links}
                         <div className="language-selection">
                             <FaGlobe />
                             <span>English</span>
