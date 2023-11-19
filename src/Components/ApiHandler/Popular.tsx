@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
-import { MovieData, fetchPopularMovies } from './tmdbFetch';
+import { MovieData, fetchPopularMovies } from './popularFetch';
 
 function Popular() {
   const [popularMovies, setPopularMovies] = useState<MovieData[]>([]);
@@ -31,6 +31,8 @@ function Popular() {
             alt={lastMovie.title}
           />
           <h1>{lastMovie.title}</h1>
+          <p>{lastMovie.overview}</p>
+          <h4>{lastMovie.release_date}</h4>
         </Fragment>
       )}
     </div>
@@ -39,3 +41,10 @@ function Popular() {
 }
 
 export default Popular;
+
+// "original_title": "Oppenheimer",
+// "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+// "popularity": 2590.24,
+// "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+// "release_date": "2023-07-19",
+// "title": "Oppenheimer",

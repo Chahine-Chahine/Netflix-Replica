@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
-import { MovieData, fetchPopularMovies } from './tmdbFetch';
+import { MovieData, fetchPopularMovies } from './popularFetch';
 import { fetchMovieGenre } from './getMovieGenre';
 
 function Discover() {
@@ -8,7 +8,7 @@ function Discover() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const moviesData = await fetchMovieGenre();
+        const moviesData = await fetchMovieGenre(14);
         setDiscoverGenre(moviesData);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -32,6 +32,8 @@ function Discover() {
             alt={FirstMovie.title}
           />
           <h1>{FirstMovie.title}</h1>
+          <p>{FirstMovie.overview}</p>
+          <h4>{FirstMovie.release_date}</h4>
         </Fragment>
       )}
     </div>
