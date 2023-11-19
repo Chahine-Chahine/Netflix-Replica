@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllMoviesPage from '../AllMoviesPage/AllMoviesPage';
 import MoviePreview from '../MoviePreview/MoviePreview';
-
-import './App.css'
+import '../App/App.css'
 
 
 function App() {
@@ -19,7 +18,10 @@ function App() {
         </BrowserRouter>
       </div>
 
-      
+      <div className='center'>
+        <Message></Message>
+        <p className='purple-bold'>A Big Hello from Chahine Team.<br></br>Let's Do This!</p>
+      </div>
     </>
   );
 
