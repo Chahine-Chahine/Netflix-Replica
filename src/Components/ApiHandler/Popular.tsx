@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 interface MovieData {
   id: number;
@@ -23,11 +23,13 @@ function Popular() {
   console.log(popularMovies);
 
   return (
+    <Fragment>
     <div>
       {popularMovies.map((movie) => (
         <img key={movie.id} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
       ))}
     </div>
+    </Fragment>
   );
 }
 
