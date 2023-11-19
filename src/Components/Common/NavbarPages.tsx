@@ -2,10 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../../assets/logo-navbarPages.png'
-import './NavBarPages.css'
-
-
-
+// import './NavBarPages.css'
 
 function NavBarPages() {
     return (

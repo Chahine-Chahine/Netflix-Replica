@@ -1,24 +1,31 @@
+
 // import '../App/App'
 import NavBarPages from '../../Components/Common/NavbarPages';
 import Footer from "../../Components/Common/Footer"
+import { Fragment, useEffect, useState } from "react";
+// import '../App/App.css'
 // import  '../../Components/Common/Footer.css'
+// import  '../../Components/Common/NavBarPages.css'
 
 
-function AllMoviesPage() {
+
+function MoviePreview() {
+
+
     return (
         <>
-            <NavBarPages/>
+
+            <NavBarPages />
             <div className="pages-container">
                 <Footer />
             </div>
+            {/* <Popular/> */}
 
-
-
-            {/* <div className='center'>
-                <p className='purple-bold'>All Movies Page.<br></br>Let's Do It Team!</p>
-            </div> */}
+            <h1>HOMEPAGE</h1>
+          
         </>
+
     );
 }
 
-export default AllMoviesPage;
+export default MoviePreview;
