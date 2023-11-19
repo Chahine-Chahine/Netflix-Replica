@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { SlArrowDown } from "react-icons/sl";
 import { FaGlobe } from "react-icons/fa";
-import './FooterPages.css'
+import  './Footer.css'
 
 
 function FooterPages() {

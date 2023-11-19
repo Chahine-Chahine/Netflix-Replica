@@ -1,13 +1,13 @@
-import './App.css'
-import NavBarPages from '../Components/NavBar/NavbarPages';
-import FooterPages from '../Components/Footer/FooterPages';
+import '../App/App'
+import NavBarPages from '../../Components/Common/NavbarPages';
+import Footer from "../../Components/Common/Footer"
 
 function AllMoviesPage() {
     return (
         <>
-            <NavBarPages />
+            <NavBarPages/>
             <div className="pages-container">
-                <FooterPages />
+                <Footer />
             </div>
 
 
