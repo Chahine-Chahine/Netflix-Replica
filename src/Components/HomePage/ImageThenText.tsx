@@ -1,19 +1,24 @@
 import './ImageThenText.css'
-import image from './../../assets/HR-factory03.jpg'
 
+interface Props {
+    title: string;
+    text: string;
+    image: string;
+}
 
-function ImageThenText(){
+function ImageThenText(props: Props){
     return(
         <>
         <div className="image-then-text">
             <div className="left-image">
-                <img src={image} className='left-image-image'/>
+                <img src={props.image} className='left-image-image'/>
             </div>
             <div className="right-text">
                 <h1 className='right-text-title'>
-                Download your shows to watch offline                </h1>
+                    {props.title}
+                </h1>
                 <p className="right-text-text">
-                Save your favorites easily and always have something to watch.
+                    {props.text}
                 </p>
             </div>
         </div>
