@@ -1,13 +1,14 @@
-import '../App/App.css'
+import React from 'react';
+import FilmsContainer from '../../Components/AllMovies/FilmsContainer';
+import "../../Components/AllMovies/CaroaselComponents.css";
 
-function AllMoviesPage() {
-    return (
-        <>
-            <div className='center'>
-                <p className='purple-bold'>All Movies Page.<br></br>Let's Do It Team!</p>
-            </div>
-        </>
-    );
-}
+const App: React.FC = () => {
+  return (
+    
+      <div>
+        <FilmsContainer />
+      </div>
+  );
+};
 
-export default AllMoviesPage;
+export default App;
