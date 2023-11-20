@@ -18,23 +18,6 @@ img {
   height: 100%;
 }
 
-h1{
-  font-size: 40px;
-  color: black;
-}
-
-.purple-bold{
-  font-size: 50px;
-  color: purple;
-}
-.center{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .homepage-container{
   margin: 0px 150px;

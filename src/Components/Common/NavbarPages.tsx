@@ -2,25 +2,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../../assets/logo-navbarPages.png'
-// import './NavBarPages.css'
+import navbarStyles from './NavBarPages.module.css'
 
 function NavBarPages() {
     return (
-        <div className="navBarPages">
+        <div className={navbarStyles.navBarPages}>
 
-            <div className="navBarPages-left">
+            <div className={navbarStyles.navBarPagesLeft}>
                 <img src={logo} alt="" />
             </div>
 
-            <div className="navBarPages-right">
+            <div className={navbarStyles.navBarPagesRight}>
 
-                <div className="navBarPages-text">
+                <div className={navbarStyles.navBarPagesText}>
                     UNLIMITED TV SHOWS & MOVIE
                 </div>
-                <Link to='../AllMoviesPage' className="btn-login">
+                <Link to='../AllMoviesPage' className={navbarStyles.btnLogin}>
                     JOIN NOW
                 </Link>
-                <Link to='../MoviePreview' className="btn-signIn">
+                <Link to='../MoviePreview' className={navbarStyles.btnSignIn}>
                     SIGN IN
                 </Link>
             </div>

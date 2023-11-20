@@ -3,9 +3,7 @@ import AllMoviesPage from '../AllMoviesPage/AllMoviesPage';
 import MoviePreview from '../MoviePreview/MoviePreview';
 import HomePage from '../HomePage/HomePage';
 
-
 import '../App/App.css'
-import '../../Components/Common/NavBarPages.css'
 
 
 function App() {

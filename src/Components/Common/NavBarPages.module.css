@@ -10,20 +10,20 @@
 }
 
 .navBarPages,
-.navBarPages-left,
-.navBarPages-left img,
-.navBarPages-right,
+.navBarPagesLeft,
+.navBarPagesLeft img,
+.navBarPagesRight,
 .navBarPages-text{
     background-color: black;
 }
 
 
-.navBarPages-left img{
+.navBarPagesLeft img{
     width: 9vw;  
     cursor: pointer;
 }
 
-.navBarPages-right{
+.navBarPagesRight{
     display: flex;
     gap: 8px;
     align-items: center; 
@@ -31,7 +31,7 @@
     padding: 5px 0px;
 }
 
-.btn-login , .btn-signIn{
+.btnLogin , .btnSignIn{
     border-radius: 2px;
     cursor: pointer;
     color: white;
@@ -39,23 +39,23 @@
 
 }
 
-.btn-login{
+.btnLogin{
     padding: 10px 25px;
     background-color: 	#E50914;
 
 }
-.btn-signIn{
+.btnSignIn{
     background-color: transparent;
     border: 1px solid white;
     padding: 7px 20px;
   
 }
 
-.btn-login:hover{
+.btnLogin:hover{
     background-color: 	#f62a34;
 }
 
-.btn-signIn:hover{
+.btnSignIn:hover{
     background-color: rgba(255, 255, 255,0.2);
 }
 
@@ -73,7 +73,7 @@
     
     }
 
-    .navBarPages-left img{
+    .navBarPagesLeft img{
         width: 30vw;
     }
     
