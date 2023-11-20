@@ -19,7 +19,7 @@ function Popular() {
  
 
   
-  let lastMovie = popularMovies[16]; 
+  let lastMovie = popularMovies[0]; 
 
   return (
     <Fragment>

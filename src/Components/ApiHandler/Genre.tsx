@@ -8,7 +8,7 @@ function Discover() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const moviesData = await fetchMovieGenre(14);
+        const moviesData = await fetchMovieGenre(35);
         setDiscoverGenre(moviesData);
       } catch (error) {
         console.error('Error fetching data:', error);

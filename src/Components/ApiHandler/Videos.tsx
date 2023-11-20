@@ -15,12 +15,12 @@ function Video() {
       }
     };
 
-    fetchData();
+    fetchData();  
   }, []);
  
 
   
-  let videoIndex = MovieVideo[15]; 
+  let videoIndex = MovieVideo[1]; 
 
   return (
     <Fragment>
