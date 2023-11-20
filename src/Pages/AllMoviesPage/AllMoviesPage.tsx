@@ -1,11 +1,11 @@
 import React from 'react';
 import FilmsContainer from '../../Components/AllMovies/FilmsContainer';
-import "../../Components/AllMovies/CaroaselComponents.css";
+import style from "../../Components/AllMovies/CaroaselComponents.module.css";
 
 const App: React.FC = () => {
   return (
     
-      <div className='all-page'>
+      <div className={style.allPage}>
         <FilmsContainer />
       </div>
   );

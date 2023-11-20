@@ -1,0 +1,86 @@
+/* Original styles */
+
+.carouselContainer {
+	padding: 0px 27.938px 0px 27.938px;
+	height: 265.33px;
+	width: auto;
+  }
+  
+  .filmList {
+	display: flex;
+	width: 100vw;
+  }
+  
+  .filmContainer {
+	width: 299px;
+	height: 216.66px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	margin-left: 12px;
+  }
+  
+  .filmTitle {
+	width: 299px;
+	height: 21.33px;
+	text-align: center;
+	margin: 2px 0 0 0;
+	color: white;
+	font-size: 16px;
+  }
+  
+  .filmListContent {
+	width: 100vw;
+  }
+  
+  .filmImageCharacteristics {
+	width: 299px;
+	height: 168px;
+  }
+  
+  .genreTitle {
+	width: fit-content;
+	height: 22px;
+	cursor: pointer;
+	color: white;
+	padding: 0px 27.938px;
+	font-weight: 600;
+	font-size: 16px;
+	margin: 12px 12px 10px 12px; /* Adjusted margin between genre titles */
+  }
+  
+  .allPage {
+	overflow-x: hidden;
+	background-color: #181818;
+	width: 100%;
+	height: 100vh;
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-weight: 300;
+  }
+  
+  .scrollCharacteristics {
+	color: #e50914;
+	background-color: #181818;
+	width: fit-content;
+	height: fit-content;
+	border: 0cap;
+	align-items: center;
+	font-size: 16px;
+	position: fixed;
+  }
+  
+  .filmContainerCharacteristic {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+  
+  /* Media query for screens with a width between 600px and 900px */
+  @media (min-width: 600px) and (max-width: 900px) {
+	
+  }
