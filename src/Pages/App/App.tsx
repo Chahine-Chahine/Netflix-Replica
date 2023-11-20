@@ -5,8 +5,6 @@ import HomePage from '../HomePage/HomePage';
 
 
 import '../App/App.css'
-import '../../Components/Common/Footer.css'
-import '../../Components/Common/Footer.css'
 import '../../Components/Common/NavBarPages.css'
 
 

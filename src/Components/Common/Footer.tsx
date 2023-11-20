@@ -1,59 +1,120 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-
 import { SlArrowDown } from "react-icons/sl";
 import { FaGlobe } from "react-icons/fa";
-import  './Footer.css'
+import footerStyles from  './Footer.module.css'
 
-const arr1_links=["FAQ","Investor Relations","Privacy","Speed Test"]
-const list1_links = arr1_links.map(arr1_link => <a href='#'>{arr1_link}</a>);
+
+
+const arr1_links = [{
+    link: "https://help.netflix.com/support/412",
+    link_title: 'FAQ'
+},
+{
+    link: "http://ir.netflix.com/",
+    link_title: 'Investor Relations'
+},
+{
+    link: "https://help.netflix.com/legal/privacy",
+    link_title: 'Privacy'
+},
+{
+    link: "Speed Test",
+    link_title: 'Speed'
+}
+];
+
+const arr2_links = [{
+    link: "https://help.netflix.com/support/412",
+    link_title: 'Help Center'
+},
+{
+    link: "http://ir.netflix.com/",
+    link_title: 'Jobs'
+},
+{
+    link: "https://help.netflix.com/legal/privacy",
+    link_title: 'Cookie Preferences'
+},
+{
+    link: "Speed Test",
+    link_title: 'Legal Notices'
+}
+];
+
+
+const arr3_links = [{
+    link: "https://help.netflix.com/support/412",
+    link_title: 'Accounts'
+},
+{
+    link: "http://ir.netflix.com/",
+    link_title: 'Ways to Watch'
+},
+{
+    link: "https://help.netflix.com/legal/privacy",
+    link_title: 'Corporate Information'
+},
+{
+    link: "Speed Test",
+    link_title: 'Only On Netflix'
+}
+];
+
+const arr4_links = [{
+    link: "https://help.netflix.com/support/412",
+    link_title: 'Media Center'
+},
+{
+    link: "http://ir.netflix.com/",
+    link_title: 'Jobs'
+},
+{
+    link: "https://help.netflix.com/legal/privacy",
+    link_title: 'Cookie Preferences'
+},
+{
+    link: "Speed Test",
+    link_title: 'Terms of Use'
+}
+];
+
+
+const list1_links = arr1_links.map(arr1_link => <a href={arr1_link.link}>{arr1_link.link_title}</a>);
+const list2_links = arr2_links.map(arr2_link => <a href={arr2_link.link}>{arr2_link.link_title}</a>);
+const list3_links = arr3_links.map(arr3_link => <a href={arr3_link.link}>{arr3_link.link_title}</a>);
+const list4_links = arr4_links.map(arr4_link => <a href={arr4_link.link}>{arr4_link.link_title}</a>);
+
 
 function FooterPages() {
     return (
 
-        <div className="footer-container">
-            <h3 className='footer-title'>Questions? Contact us.</h3>
-            
-                <div className="links-container">
+        <div className={footerStyles.footerContainer}>
+            <h3 className={footerStyles.footerTitle}>Questions? Contact us.</h3>
 
-                    <div className="links">
-                        {/* <a href="#">FAQ</a>
-                        <a href="#">Investor Relations</a>
-                        <a href="#">Privacy</a>
-                        <a href="#">Speed Test</a> */}
-                        {list1_links}
-                        <div className="language-selection">
-                            <FaGlobe />
-                            <span>English</span>
-                            <SlArrowDown />
-                        </div>
-                        <a href="#">Netflix Lebanon</a>
+            <div className={footerStyles.linksContainer}>
+
+                <div className={footerStyles.links}>
+                    {list1_links}
+                    <div className={footerStyles.languageSelection}>
+                        <FaGlobe />
+                        <span>English</span>
+                        <SlArrowDown />
                     </div>
-
-                    <div className="links">
-                        <a href="#">Help Center</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">Cookie Preferences</a>
-                        <a href="#">Legal Notices</a>
-                    </div>
-
-                    <div className="links">
-                        <a href="#">Account</a>
-                        <a href="#">Ways to Watch</a>
-                        <a href="#">Corporate Information</a>
-                        <a href="#">Only on Netflix</a>
-                    </div>
-
-                    <div className="links">
-                        <a href="#">Media Center</a>
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Contact Us</a>
-                    </div>
-
-
+                    <a href="#">Netflix Lebanon</a>
                 </div>
-            
+
+                <div className={footerStyles.links}>
+                    {list2_links}
+                </div>
+
+                <div className={footerStyles.links}>
+                    {list3_links}
+                </div>
+
+                <div className={footerStyles.links}>
+                    {list4_links}
+                </div>
+            </div>
+
 
         </div>
     )

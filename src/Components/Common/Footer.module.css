@@ -1,8 +1,16 @@
-.pages-container{
+.pagesContainer{
     margin: 0px 70px;
 }
 
-.links-container{
+
+.upperLinkText,.footerTitle{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(136, 126, 126);
+
+}
+
+.linksContainer{
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -12,19 +20,18 @@
     
 }
 
-.footer-container{
+.footerContainer{
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     color: rgb(136, 126, 126);
 
 }
 
-.footer-title{
+.footerTitle{
     margin: 40px 0px 20px;
 }
 
-.links-container{
+.linksContainer{
     display: flex;
     flex-direction: row;
     
@@ -42,11 +49,13 @@
     padding-bottom: 15px;
 }
 
-.links a:hover{
+.links a:hover,
+.upperLinkText:hover{
     text-decoration:underline;
+    cursor: pointer;
 }
 
-.language-selection{
+.languageSelection{
     border: 1px solid grey;
     margin:20px 0px;
     padding: 10px;
@@ -54,8 +63,7 @@
     
 }
 
-.language-selection span{
-   
+.languageSelection span{
     padding: 0px 10px;
     
 }
