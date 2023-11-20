@@ -12,9 +12,9 @@ function MoviePreview() {
         <>
           
             <Upcoming/>
-            {/* <Popular/>
+            <Popular/>
             <Discover/>
-            <Video/> */}
+            <Video/>
         </>
 
     );

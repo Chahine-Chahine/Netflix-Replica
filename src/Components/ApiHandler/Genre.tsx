@@ -8,7 +8,7 @@ function Discover() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const moviesData = await fetchMovieGenre(35);
+        const moviesData = await fetchMovieGenre(80);
         setDiscoverGenre(moviesData);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -20,7 +20,7 @@ function Discover() {
  
 
   
-  let FirstMovie = DiscoverGenre[10]; 
+  let FirstMovie = DiscoverGenre[9]; 
 
   return (
     <Fragment>
