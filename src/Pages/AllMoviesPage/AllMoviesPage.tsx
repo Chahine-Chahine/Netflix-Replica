@@ -5,7 +5,7 @@ import "../../Components/AllMovies/CaroaselComponents.css";
 const App: React.FC = () => {
   return (
     
-      <div>
+      <div className='all-page'>
         <FilmsContainer />
       </div>
   );
