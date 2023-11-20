@@ -1,6 +1,5 @@
 
 // import '../App/App'
-import NavBarPages from '../../Components/Common/NavbarPages';
 import Footer from "../../Components/Common/Footer"
 import HeaderHome from '../../Components/HomePage/HeaderHome';
 import { Fragment, useEffect, useState } from "react";
@@ -16,7 +15,6 @@ function MoviePreview() {
     return (
         <>
             
-            <NavBarPages />
             <HeaderHome />
             <div className="pages-container">
                 <Footer />
