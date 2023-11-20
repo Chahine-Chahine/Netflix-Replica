@@ -1,0 +1,19 @@
+.upcoming-card {
+  width: 366px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 40px;
+} 
+.upcoming-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.upcoming-description {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
