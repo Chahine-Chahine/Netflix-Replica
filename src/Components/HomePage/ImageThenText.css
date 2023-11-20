@@ -1,11 +1,12 @@
-.text-then-image{
+.image-then-text{
     height: 90vh;
     width: 100%;
     background-color: black;
     display: flex;
+    justify-content: end;
 }
 
-.left-text{
+.right-text{
     background-color: black;
     width: 50%;
     height: 100%;
@@ -14,26 +15,28 @@
     justify-content: center;
 }
 
-.left-text-title{
+.right-text-title{
+    width: 80%;
     background: none;
     color: white;
     font-size: 53px;
     font-weight: 800;
-    margin:0 0 10px 33px;
+    margin:0 0 10px 1px;
 }
 
-.left-text-text{
+.right-text-text{
+    width: 80%;
     background: none;
     font-size: 25px;
     color: white;
-    margin-left: 33px;
 }
 
-.right-image{
-    width: 45%;
+.left-image{
+    width: 47%;
     background-color: black;
+    margin-right: 8px;
 }
 
-.right-image-image{
+.left-image-image{
     background-color: black;
 }
