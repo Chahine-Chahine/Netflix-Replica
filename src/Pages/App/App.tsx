@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllMoviesPage from '../AllMoviesPage/AllMoviesPage';
 import MoviePreview from '../MoviePreview/MoviePreview';
-import Accordion from '../../Components/Accordion';
+import Accordion from '../../Components/Common/Accordion';
 import '../App/App.css'
 
 
