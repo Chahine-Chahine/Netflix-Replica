@@ -9,8 +9,6 @@ function MoviePreview() {
 
     return (
         <>
-
-           
             <div className="homepage-container">
                 <Footer />
             </div>

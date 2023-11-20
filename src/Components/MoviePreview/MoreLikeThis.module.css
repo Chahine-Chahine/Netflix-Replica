@@ -1,0 +1,26 @@
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: white;
+    margin:20px 0px;
+    font-size: 20px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+
+.card{
+    border: 1px solid red;
+    background-color: red;
+    padding:90px 170px;
+}
