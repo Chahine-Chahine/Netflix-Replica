@@ -9,7 +9,7 @@ interface CarouselProps {
 const Carousel: React.FC<CarouselProps> = ({ films, genre }) => {
 	return (
 		<div className="carousel-container">
-			<p>{genre}</p>
+			<p className="genre-title">{genre}</p>
 			<div className="film-list">
 				{films.map((film) => (
 					<div
