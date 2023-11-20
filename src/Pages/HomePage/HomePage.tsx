@@ -10,6 +10,7 @@ function MoviePreview() {
     return (
         <>
             <div className="homepage-container">
+                <h1>commit</h1>
                 <Footer />
             </div>
       
