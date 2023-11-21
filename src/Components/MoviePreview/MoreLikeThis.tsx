@@ -1,4 +1,6 @@
 import moreLikeThisStyles from  '../../Components/MoviePreview/MoreLikeThis.module.css'
+import blurred from './../../../src/assets/blurred-bg.png'
+import { Link } from 'react-router-dom';
 
 
 function MoviePreview() {
@@ -10,16 +12,13 @@ function MoviePreview() {
                 <h2>More Like This</h2>
             </div>
 
-            <div className={moreLikeThisStyles.cardContainer}>
-                <div className={moreLikeThisStyles.card}></div>
-                <div className={moreLikeThisStyles.card}></div>
-                <div className={moreLikeThisStyles.card}></div>
-                <div className={moreLikeThisStyles.card}></div>
-                <div className={moreLikeThisStyles.card}></div>
-                <div className={moreLikeThisStyles.card}></div>
-                <div className={moreLikeThisStyles.card}></div>
-
-            </div>
+            <Link to='../AllMoviesPage' className={moreLikeThisStyles.cardContainer}>
+                <img src={blurred} className={moreLikeThisStyles.card} alt="" />
+                <img src={blurred} className={moreLikeThisStyles.card} alt="" />
+                <img src={blurred} className={moreLikeThisStyles.card} alt="" />
+                <img src={blurred} className={moreLikeThisStyles.card} alt="" />
+                <img src={blurred} className={moreLikeThisStyles.card} alt="" />
+            </Link>
 
         </>
 
