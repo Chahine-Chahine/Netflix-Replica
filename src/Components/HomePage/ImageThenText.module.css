@@ -1,11 +1,13 @@
-.text-then-image{
+.imagethentext{
     height: 90vh;
     width: 100%;
     background-color: black;
     display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
 }
 
-.left-text{
+.righttext{
     background-color: black;
     width: 50%;
     height: 100%;
@@ -14,26 +16,34 @@
     justify-content: center;
 }
 
-.left-text-title{
+.righttexttitle{
+    width: 80%;
     background: none;
     color: white;
     font-size: 53px;
     font-weight: 800;
-    margin:0 0 10px 33px;
+    margin:0 0 10px 1px;
 }
 
-.left-text-text{
+.righttexttext{
+    width: 80%;
     background: none;
     font-size: 25px;
     color: white;
-    margin-left: 33px;
 }
 
-.right-image{
-    width: 45%;
+.leftimage{
+    width: 47%;
+    background-color: black;
+    margin-right: 8px;
+}
+
+.leftimageimage{
     background-color: black;
 }
 
-.right-image-image{
-    background-color: black;
+.breakDiv{
+    width: 100%;
+    height: 9px;
+    background-color: rgb(50, 50, 50);
 }

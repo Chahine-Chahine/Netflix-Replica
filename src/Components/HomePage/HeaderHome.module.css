@@ -8,6 +8,7 @@
     align-items: center;
     background-position: -160px -180px;
     background-size: 125%;
+    flex-wrap: wrap;
 }
 
 .headerContainerShadow{
@@ -32,6 +33,7 @@
     align-items: center;
     background: none;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
 .headerFirstP{
@@ -85,6 +87,7 @@
     justify-content: space-between;
     background: none;
     z-index: 3;
+    flex-wrap: wrap;
 }
 
 .homeLogo{

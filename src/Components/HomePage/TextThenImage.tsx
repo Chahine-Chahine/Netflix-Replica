@@ -1,30 +1,35 @@
-import './TextThenImage.css'
-import image from './../../assets/HR-factory02.png'
+import TextImage from './TextThenImage.module.css'
 
 interface Props {
     title: string;
     text: string;
     image: string;
+    videoSrc: string;
+    videoStyle: string;
 }
 
 function TextThenImage(props: Props){
 
     return(
         <>
-        <div className="text-then-image">
-            <div className="left-text">
-                <h1 className='left-text-title'>
+        <div className={TextImage.textthenimage}>
+            <div className={TextImage.lefttext}>
+                <h1 className={TextImage.lefttexttitle}>
                     {props.title}
                 </h1>
-                <p className="left-text-text">
+                <p className={TextImage.lefttexttext}>
                     {props.text}
                 </p>
             </div>
-            <div className="right-image">
-                <img src={props.image} className='right-image-image'/>
+            <div className={TextImage.rightimage}>
+                <img src={props.image} className={TextImage.rightimageimage}/>
+                <video className={props.videoStyle} autoPlay playsInline muted loop>
+                    <source src={props.videoSrc}
+                     type="video/mp4"/>
+                </video>
             </div>
         </div>
-        <div className='break-div'></div>
+        <div className={TextImage.breakDiv}></div>
         </>
     )
 }

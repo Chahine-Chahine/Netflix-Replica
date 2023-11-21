@@ -1,4 +1,4 @@
-import './ImageThenText.css'
+import ImageText from './ImageThenText.module.css'
 
 interface Props {
     title: string;
@@ -9,20 +9,20 @@ interface Props {
 function ImageThenText(props: Props){
     return(
         <>
-        <div className="image-then-text">
-            <div className="left-image">
-                <img src={props.image} className='left-image-image'/>
+        <div className={ImageText.imagethentext}>
+            <div className={ImageText.leftimage}>
+                <img src={props.image} className={ImageText.leftimageimage}/>
             </div>
-            <div className="right-text">
-                <h1 className='right-text-title'>
+            <div className={ImageText.righttext}>
+                <h1 className={ImageText.righttexttitle}>
                     {props.title}
                 </h1>
-                <p className="right-text-text">
+                <p className={ImageText.righttexttext}>
                     {props.text}
                 </p>
             </div>
         </div>
-        <div className='break-div'></div>
+        <div className={ImageText.breakDiv}></div>
         </>
     )
 }

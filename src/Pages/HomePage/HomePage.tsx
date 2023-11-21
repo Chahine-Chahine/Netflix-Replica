@@ -8,6 +8,7 @@ import image1 from './../../assets/HR-factory02.png'
 import image2 from './../../assets/HR-factory03.jpg'
 import image3 from './../../assets/HR-factory06.png'
 import image4 from './../../assets/HR-factory07.png'
+import TextImage from '../../Components/HomePage/TextThenImage.module.css'
 
 import { Fragment, useEffect, useState } from "react";
 // import '../App/App.css'
@@ -29,9 +30,11 @@ function MoviePreview() {
         <>
             
             <HeaderHome />
-            <TextThenImage title={titles[0]} text={texts[0]} image={image1}/>
+            <TextThenImage title={titles[0]} text={texts[0]} image={image1} videoStyle={TextImage.firstvideoright}
+                videoSrc="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
             <ImageThenText title={titles[1]} text={texts[1]} image={image2}/>
-            <TextThenImage title={titles[2]} text={texts[2]} image={image3}/>
+            <TextThenImage title={titles[2]} text={texts[2]} image={image3} videoStyle={TextImage.secondvideoright}
+                videoSrc="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" />
             <ImageThenText title={titles[3]} text={texts[3]} image={image4}/>
             <div className="pages-container">
                 <Footer />

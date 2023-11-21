@@ -1,4 +1,3 @@
-import bg from './../../assets/headerHomeBg.jpg'
 import headerStyles from "./HeaderHome.module.css"
 import logo from './../../assets/logo-navbarPages.png'
 import { SlArrowDown } from "react-icons/sl";

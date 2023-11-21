@@ -1,0 +1,77 @@
+.textthenimage{
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lefttext{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lefttexttitle{
+    background: none;
+    color: white;
+    font-size: 53px;
+    font-weight: 800;
+    margin:0 0 10px 33px;
+}
+
+.lefttexttext{
+    background: none;
+    font-size: 25px;
+    color: white;
+    margin-left: 33px;
+}
+
+.rightimage{
+    width: 45%;
+    background-color: black;
+    position: relative;
+}
+
+.rightimageimage{
+    background-color: black;
+    display: block;
+}
+
+.breakDiv{
+    width: 100%;
+    height: 9px;
+    background-color: rgb(50, 50, 50);
+}
+.videorightcontainer{
+    background-color: aqua;
+    position: absolute;
+}
+
+.firstvideoright{
+    overflow: hidden;
+    background: none;
+    width: 100%;
+    height: 100%;
+    max-width: 72.4%;
+    max-height: 54%;
+    position: absolute;
+    top: 21.5%;
+    left: 13.5%;
+
+}
+
+.secondvideoright{
+    overflow: hidden;
+    background: none;
+    width: 100%;
+    height: 100%;
+    max-width: 60%;
+    max-height: 47%;
+    position: absolute;
+    top: 14%;
+    left: 19%;
+}
