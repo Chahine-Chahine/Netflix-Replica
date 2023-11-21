@@ -1,0 +1,25 @@
+ @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville&family=Noto+Sans+Mono:wght@600;800&family=Roboto:ital,wght@0,100;0,300;0,500;1,900&display=swap');
+
+
+*{
+  font-family: "Roboto";
+}
+.upcomingCard {
+  width: 366px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 40px;
+} 
+.upcomingTitle {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.upcomingDescription {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}

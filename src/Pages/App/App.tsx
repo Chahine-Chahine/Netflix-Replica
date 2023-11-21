@@ -4,6 +4,7 @@ import MoviePreview from '../MoviePreviewPage/MoviePreviewPage';
 import HomePage from '../HomePage/HomePage';
 
 import '../App/App.css'
+import Popular from '../../Components/ApiHandler/Popular';
 
 
 function App() {
