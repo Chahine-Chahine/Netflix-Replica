@@ -1,0 +1,13 @@
+*{
+    background-color: #181818;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.title{
+    color: white;
+    font-size: 32px;
+}
