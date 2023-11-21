@@ -1,0 +1,39 @@
+.text-then-image{
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.left-text{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-text-title{
+    background: none;
+    color: white;
+    font-size: 53px;
+    font-weight: 800;
+    margin:0 0 10px 33px;
+}
+
+.left-text-text{
+    background: none;
+    font-size: 25px;
+    color: white;
+    margin-left: 33px;
+}
+
+.right-image{
+    width: 45%;
+    background-color: black;
+}
+
+.right-image-image{
+    background-color: black;
+}
