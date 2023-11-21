@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllMoviesPage from '../AllMoviesPage/AllMoviesPage';
-import MoviePreview from '../MoviePreview/MoviePreview';
+import MoviePreview from '../MoviePreviewPage/MoviePreview';
 import HomePage from '../HomePage/HomePage';
 
 
