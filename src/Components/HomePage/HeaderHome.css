@@ -115,7 +115,7 @@
     border-radius: 5px;
     border: 1px solid grey;
     height: 40%;
-    padding: 3px 40px;
+    padding: 3px 20px;
     margin-right: 25px;
 }
 
@@ -123,4 +123,13 @@
     width: 100%;
     height: 9px;
     background-color: rgb(50, 50, 50);
+}
+
+.selected-language{
+    margin: 0 15px;
+}
+
+.arrow-right{
+    background-color: red;
+    height: 20px;
 }
