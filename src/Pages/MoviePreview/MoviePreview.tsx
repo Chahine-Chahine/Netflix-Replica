@@ -10,10 +10,12 @@ function MoviePreview() {
 
 
       {/* Coming Soon Section */}
+      <div className={moviePreviewStyles.column}>
+        <div className={moviePreviewStyles.title}>Comming Soon</div>
       <div className={moviePreviewStyles.cardContainer}>
-        <div></div>
         <Upcoming />
         {/* Coming Soon Section */}
+      </div>
       </div>
     </>
   );

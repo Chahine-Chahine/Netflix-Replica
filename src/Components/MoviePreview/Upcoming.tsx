@@ -21,7 +21,7 @@ function Upcoming() {
   return (
     <>
 
-      {upcomingMovies.slice(0,8).map((movie) => (
+      {upcomingMovies.slice(1,8).map((movie) => (
         <div className={upcomingStyles.upcomingCard}>
           <div className={upcomingStyles.upcomingTitle}>{movie.title}</div>
           <div className={upcomingStyles.upcomingDescription}>{movie.overview}</div>
