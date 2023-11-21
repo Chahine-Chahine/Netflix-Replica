@@ -1,5 +1,5 @@
 import bg from './../../assets/headerHomeBg.jpg'
-import './HeaderHome.css'
+import headerStyles from "./HeaderHome.module.css"
 import logo from './../../assets/logo-navbarPages.png'
 import { SlArrowDown } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
@@ -8,31 +8,31 @@ import { FaGlobe } from "react-icons/fa";
 function HeaderHome(){
     return(
         <>
-        <div className="header-container">
-            <div className="header-container-shadow">
+        <div className={headerStyles.headerContainer}>
+            <div className={headerStyles.headerContainerShadow}>
             </div>
-            <div className="home-header-nav">
-                    <img src={logo} className='home-logo' alt='logo'/>
-                    <div className="home-navs">
-                        <div className="nav-language-selection">
+            <div className={headerStyles.homeHeaderNav}>
+                    <img src={logo} className={headerStyles.homeLogo} alt='logo'/>
+                    <div className={headerStyles.homeNavs}>
+                        <div className={headerStyles.navLanguageSelection}>
                             <FaGlobe />
-                            <span className='selected-language'>English</span>
+                            <span className={headerStyles.selectedLanguage}>English</span>
                             <SlArrowDown />
                         </div>
-                        <button className='signup-button'>Sign In </button>
+                        <button className={headerStyles.signupButton}>Sign In </button>
                     </div>
             </div>
-            <div className="header-text-container">
-                <h1 className="header-title">Unlimited movies, TV shows, and more</h1>
-                <p className="header-first-p">Watch anywhere. Cancel anytime.</p>
-                <p className="header-second-p">Ready to watch? Enter your email to create or restart your membership.</p>
-                <div className="input-button">
-                    <input type='text' placeholder='Email address' className='header-input'/>
-                    <button className='header-button'>Get Started  <SlArrowRight className='arrow-right'/></button>
+            <div className={headerStyles.headerTextContainer}>
+                <h1 className={headerStyles.headerTitle}>Unlimited movies, TV shows, and more</h1>
+                <p className={headerStyles.headerFirstP}>Watch anywhere. Cancel anytime.</p>
+                <p className={headerStyles.headerSecondP}>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div className={headerStyles.inputButton}>
+                    <input type='text' placeholder='Email address' className={headerStyles.headerInput}/>
+                    <button className={headerStyles.headerButton}>Get Started  <SlArrowRight className={headerStyles.arrowRight}/></button>
                 </div>
             </div>
         </div>
-        <div className='break-div'></div>
+        <div className={headerStyles.breakDiv}></div>
         </>
     )
 }

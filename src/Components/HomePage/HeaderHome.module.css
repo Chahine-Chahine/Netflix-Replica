@@ -1,4 +1,4 @@
-.header-container{
+.headerContainer{
     background-image: url("../../assets/HeaderHomeBg.jpg");
     width: 100%;
     height: 112vh;
@@ -10,21 +10,21 @@
     background-size: 125%;
 }
 
-.header-container-shadow{
+.headerContainerShadow{
     width: 100vw;
     height: 112vh;
     opacity: 0.7;
     position: absolute;
 }
 
-.header-title{
+.headerTitle{
     color: white;
     background: none;
     font-size: 55px;
     font-weight: 700;
 }
 
-.header-text-container{
+.headerTextContainer{
     margin-top: 200px;
     display: flex;
     flex-direction: column;
@@ -34,21 +34,21 @@
     z-index: 1;
 }
 
-.header-first-p{
+.headerFirstP{
     color: white;
     background: none;
     margin: 12px;
     font-size: 25px;
 }
 
-.header-second-p{
+.headerSecondP{
     color: white;
     background: none;
     margin: 12px;
     font-size: 22px;
 }
 
-.header-input{
+.headerInput{
     color: white;
     height: 100%;
     border-radius: 5px;
@@ -60,7 +60,7 @@
     font-size: 20px;
 }
 
-.header-button{
+.headerButton{
     height: 100%;
     width: 32%;
     color: white;
@@ -70,7 +70,7 @@
     border: none;
 }
 
-.input-button{
+.inputButton{
     background: none;
     width: 60%;
     margin-top: 5px;
@@ -78,7 +78,7 @@
 
 }
 
-.home-header-nav{
+.homeHeaderNav{
     width: 100%;
     height: 13vh;
     display: flex;
@@ -87,19 +87,19 @@
     z-index: 3;
 }
 
-.home-logo{
+.homeLogo{
     width: 20%;
     background: none;
 }
 
-.home-navs{
+.homeNavs{
     display: flex;
     align-items: center;
     background: none;
     margin-right: 30px;
 }
 
-.signup-button{
+.signupButton{
     color: white;
     background-color: red;
     border-radius: 5px;
@@ -109,7 +109,7 @@
 
 }
 
-.nav-language-selection{
+.navLanguageSelection{
     font-size: 18px;
     color: white;   
     border-radius: 5px;
@@ -119,17 +119,17 @@
     margin-right: 25px;
 }
 
-.break-div{
+.breakDiv{
     width: 100%;
     height: 9px;
     background-color: rgb(50, 50, 50);
 }
 
-.selected-language{
+.selectedLanguage{
     margin: 0 15px;
 }
 
-.arrow-right{
+.arrowRight{
     background-color: red;
     height: 20px;
 }
