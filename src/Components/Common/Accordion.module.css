@@ -1,0 +1,141 @@
+.sixthSection{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+
+}
+.PageSicHeader{ 
+  height: 100px;
+} 
+.headerPage{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    font-size: 70px;
+}
+.active {
+    background-color: rgb(45, 45, 45);
+    z-index: 1;
+  }
+.sectionSixPageOne{
+    background-color: black;
+}
+
+.headerOfAccordion, .content{
+    color: white;
+} 
+
+
+  .Accordion{
+    width: 1300px;
+    height: 50rem;
+    border-color: white;
+  }
+
+
+.item{
+    background-color: rgb(45, 45, 45);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    height: 70px;
+    position: relative;
+}
+
+.title{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;;
+} 
+
+.sixthSection{
+    display: flex;
+    width: 100%;
+}
+
+.content{
+    color: white;
+    height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  visibility: visible;
+}
+.content.show{
+    max-height: 500px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+    background-color: rgb(45, 45, 45);
+    height: 100px;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.emailForm{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 5px;
+ }
+
+.h2QuestionsSection{
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .placeHolderPage1{
+    height: 50px;
+  }
+  .placeHolderPage1, .buttonPageQuestions{
+    margin: 5px;
+ }
+ .emailPlaceHolder{
+    font-size: 100px;
+    height: 45px;
+    background-color: black;
+    color: gray;
+    background-color: null;
+ }
+ .buttonEmail{
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: red;
+    height: 50px;
+    width: 160px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ .buttonEmail:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+/* .Accordion {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+  } */

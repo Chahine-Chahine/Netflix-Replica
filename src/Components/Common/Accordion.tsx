@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Accordion.css"
+import accordionStyles from "./Accordion.module.css"
 
 function Accordion() {
     const [selected, setSelected] = useState<number | null>(null); // Specify the type as number | null
@@ -43,45 +43,49 @@ function Accordion() {
     };
 
     return (
-        <div className="sixthSection">
-            <div className="sectionSixPageOne">
-                <div className="headerpage1">
-                    <h1 className="pageOne">Frequently Asked Questions</h1>
-                </div>
+        <div className={accordionStyles.sixthSection}>
+            <div className={accordionStyles.sectionSixPageOne}>
+               <div className="PageSicHeader"><h1 className={accordionStyles.headerPage}>Frequently Asked Questions</h1>
+               </div> 
 
-                <div className="Wrapper">
-                    <div className="Accordion">
+                return (
+                <div className={accordionStyles.Wrapper}>
+                    <div className="AccordionParent">
+                    <div className={accordionStyles.Accordion}>
                         {Data.map((item, i) => (
-                            <div className="item" key={i}>
-                                <div className="title" onClick={() => toggle(i)}>
-                                    <h2>{item.Question}</h2>
-                                    <span>{selected === i ? "-" : "+"}</span>
+                            <div className={`${accordionStyles.item} ${selected === i ? accordionStyles.active : ''}`} key={i}>
+                                <div className={accordionStyles.title} onClick={() => toggle(i)}>
+                                    <h2 className={accordionStyles.headerOfAccordion}>{item.Question}</h2>
+                                    <span>{selected === i ? "x" : "+"}</span>
                                 </div>
-                                <div className={selected === i ? "content show" : "content"}>
-                                    {item.Answer}
+                                <div className={`${accordionStyles.content} ${selected === i ? accordionStyles.show : ''}`}>
+                                    <p>{item.Answer}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
+                </div>
+                );
 
-                <div className="QuestionsSection">
-                    <h2 className="h2QuestionsSection">
+
+                <div className={accordionStyles.QuestionsSection}>
+                    <h2 className={accordionStyles.h2QuestionsSection}>
                         Ready to watch? Enter your email to create or restart your
                         membership.
                     </h2>
                 </div>
 
-                <div className="emailForm">
-                    <div className="placeHolderPage1">
+                <div className={accordionStyles.emailForm}>
+                    <div className={accordionStyles.placeHolderPage1}>
                         <input
                             placeholder="Email address"
                             className="emailPlaceHolder"
                             id="inputPlaceholder"
                         />
                     </div>
-                    <div className="buttonPageQuestions">
-                        <button className="buttonEmail">Get Started</button>
+                    <div className={accordionStyles.buttonPageQuestions}>
+                        <button className={accordionStyles.buttonEmail}>Get Started</button>
                     </div>
                 </div>
             </div>
@@ -89,4 +93,4 @@ function Accordion() {
     );
 }
 
- export default Accordion;
+export default Accordion;
