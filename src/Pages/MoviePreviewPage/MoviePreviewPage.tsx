@@ -1,8 +1,12 @@
 import NavBarPages from '../../Components/Common/NavbarPages';
 import Footer from "../../Components/Common/Footer";
 import MoreLikeThis from "../../Components/MoviePreview/MoreLikeThis";
-import footerStyles from  '../../Components/Common/Footer.module.css'
+import footerStyles from '../../Components/Common/Footer.module.css'
 import HeaderMoviePreview from '../../Components/MoviePreview/HeaderMoviePreview';
+import Upcoming from "../../Components/MoviePreview/Upcoming";
+import moviePreviewStyles from "./MoviePreview.module.css";
+import Popular from '../../Components/MoviePreview/HeaderMoviePreview';
+
 
 
 function MoviePreview() {
@@ -10,9 +14,17 @@ function MoviePreview() {
     return (
         <>
             <NavBarPages />
-            <HeaderMoviePreview/>
+            <Popular />
             <div className="pagesContainer">
-                <MoreLikeThis/>
+                <MoreLikeThis />
+                {/* Coming Soon Section */}
+                <div className={moviePreviewStyles.column}>
+                    <div className={moviePreviewStyles.title}>Comming Soon</div>
+                    <div className={moviePreviewStyles.cardContainer}>
+                        <Upcoming />
+                        {/* Coming Soon Section */}
+                    </div>
+                </div>
                 <Footer />
             </div>
 
@@ -22,3 +34,4 @@ function MoviePreview() {
 }
 
 export default MoviePreview;
+

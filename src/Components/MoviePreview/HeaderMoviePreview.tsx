@@ -1,14 +1,30 @@
-import blurred from './../../../src/assets/blurred-bg.png'
 import { Link } from 'react-router-dom';
 import headerStyles from './HeaderMoviePreview.module.css'
 import background from './../../../src/assets/headerBg.jpg'
 import titleLogo from './../../../src/assets/titleLogo.png'
 import logoN from './../../../src/assets/logo-n.png'
-import navbarStyles from '../../Components/Common/NavBarPages.module.css'
 
+import { Fragment, useEffect, useState } from 'react';
+import { MovieData, fetchPopularMovies } from '../ApiHandler/popularFetch';
 
+function Popular() {
+    const [popularMovies, setPopularMovies] = useState<MovieData[]>([]);
 
-function HeaderMoviePreview() {
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const moviesData = await fetchPopularMovies();
+                setPopularMovies(moviesData);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    let lastMovie = popularMovies[0]; 
+
 
     return (
         <>
@@ -16,7 +32,7 @@ function HeaderMoviePreview() {
                 {/* <div className={headerStyles.imageContainer}  ></div> */}
                 <div className={headerStyles.contentContainer}>
                     <img className={headerStyles.titleLogo} src={titleLogo} alt="" />
-                    <div className={headerStyles.title}><h2>Scarface</h2></div>
+                    <div className={headerStyles.title}><h2>{lastMovie.title}</h2></div>
                     <div className={headerStyles.movieInfo}>
                         <div className={headerStyles.date}>
                             1983 |
@@ -25,7 +41,7 @@ function HeaderMoviePreview() {
                             18+
                         </div>
                         <div className={headerStyles.duration}>
-                            | 2h49min |
+                            | 2h 49min |
                         </div>
                         <div className={headerStyles.genre}>
                             Thrillers
@@ -33,7 +49,8 @@ function HeaderMoviePreview() {
                     </div>
 
                     <div className={headerStyles.movieDescription}>
-                        In a ruthless rise to Miami drug lord, a Cuban-born gangster descends into addiction, obsession and brutality, with grisly consequences.
+                        In a ruthless rise to Miami drug lord,
+                        a Cuban-born gangster descends into addiction, obsession and brutality, with grisly consequences.
                     </div>
 
                     <div className={headerStyles.cast}>
@@ -53,7 +70,7 @@ function HeaderMoviePreview() {
                         <Link to='../AllMoviesPage' className={headerStyles.btnLogin}>
                             JOIN NOW
                         </Link>
-                     
+
                     </div>
                 </div>
             </div>
@@ -62,5 +79,5 @@ function HeaderMoviePreview() {
 
     );
 }
+export default Popular;
 
-export default HeaderMoviePreview;
