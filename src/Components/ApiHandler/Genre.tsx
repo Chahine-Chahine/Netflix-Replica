@@ -1,9 +1,8 @@
 import { Fragment, useEffect, useState } from 'react';
-import { MovieData, fetchPopularMovies } from './popularFetch';
-import { fetchMovieGenre } from './getMovieGenre';
+import { GenreMovieData, fetchMovieGenre } from './getMovieGenre';
 
 function Discover() {
-  const [DiscoverGenre, setDiscoverGenre] = useState<MovieData[]>([]);
+  const [DiscoverGenre, setDiscoverGenre] = useState<GenreMovieData[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {

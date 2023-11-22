@@ -2,6 +2,7 @@
 
     display: flex;
     flex-direction: column;
+    width: 100vw;
     height: 100vh;
     position: relative;
     justify-content: center;
@@ -10,6 +11,18 @@
     overflow: hidden;
 
 
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .contentContainer {
@@ -21,8 +34,10 @@
 }
 
 .titleLogo {
-    width: 40%;
+    width: 60%;
     margin-bottom: 20px;
+    font-size: 90px;
+    color: #E50914;
 }
 
 .title {

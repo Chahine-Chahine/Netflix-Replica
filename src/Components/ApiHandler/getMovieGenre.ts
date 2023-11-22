@@ -8,6 +8,7 @@ export interface GenreMovieData {
   title: string;
   overview : string;
   release_date: string;
+  genre_id : number;
 }
 
 export const fetchMovieGenre = async (genre: number): Promise<GenreMovieData[]> => {
