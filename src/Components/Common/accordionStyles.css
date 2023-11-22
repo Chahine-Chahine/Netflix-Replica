@@ -1,0 +1,112 @@
+body{
+  background-color: rgb(45, 45, 45);
+}
+.sixthSection{
+    background-color: black;
+    display: flex;
+    width: 100%;
+}
+.sectionSixPageOne{
+    width: 100%;
+}
+.pageOne{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.accor{
+    height: 650px;
+    width: 1200px;
+    padding-left: 200px;
+}
+.accordion {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  .accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    /* font-size: 13px; */
+    color: white;
+    float: right;
+    margin-left: 5px;
+    height: 45px;
+    font-size: 50px;
+  }
+  
+  .active:after {
+    content: "x"; /* Unicode character for "minus" sign (x) */ 
+    font-size: 30px;
+    color: white;
+  }
+  p{
+    color: white;
+    font-size: 30px;
+}
+  
+  /* Add a background color to the button if it is clicked on  and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+
+  .panel {
+    margin-left: 10px;
+    margin-top: 0px;
+    background-color: rgb(45, 45, 45);
+    max-height: 0;
+    overflow: hidden;
+    font-size: 18px;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .h2Footer{
+    
+    display: flex;
+    justify-content: center;
+  }
+  .h2QuestionsSection{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+ /* .emailForm{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 5px;
+ } */
+ /* .placeHolderPage1, 
+ .buttonPageQuestions{
+    margin: 5px;
+ } */
+ /* .emailPlaceHolder{
+    font-size: 20px;
+    height: 45px;
+    background-color: black;
+    color: gray;
+ } */
+ /* .buttonEmail{
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: red;
+    height: 50px;
+    width: 160px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ .buttonEmail:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  } */
