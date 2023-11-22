@@ -1,11 +1,12 @@
 import moreLikeThisStyles from  '../../Components/MoviePreview/MoreLikeThis.module.css'
 import blurred from './../../../src/assets/blurred-bg.png'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { IdData, fetchById } from '../ApiHandler/ById';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
 function MoviePreview() {
+
   const [byId, setById] = useState<IdData[]>([]);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ function MoviePreview() {
                 <h2>More Like This</h2>
             </div>
 
-            <Link to='../AllMoviesPage' className={moreLikeThisStyles.cardContainer}>
+            <Link to={`../MoviesPreviewPage`} className={moreLikeThisStyles.cardContainer}>
                 {id_list}
             </Link>
 

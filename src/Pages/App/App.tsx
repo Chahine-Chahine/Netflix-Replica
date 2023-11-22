@@ -15,7 +15,7 @@ function App() {
           <Routes>
           <Route path="/" element={<HomePage />} />
             <Route path="/AllMoviesPage" element={<AllMoviesPage />} />
-            <Route path= {`/MoviePreviewPage/`} element={<MoviePreview />} />
+            <Route path= {`/MoviePreviewPage`} element={<MoviePreview />} />
           </Routes>
         </BrowserRouter>
       </div>
