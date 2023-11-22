@@ -3,9 +3,12 @@ import headerStyles from './HeaderMoviePreview.module.css'
 import background from './../../../src/assets/headerBg.jpg'
 import titleLogo from './../../../src/assets/titleLogo.png'
 import logoN from './../../../src/assets/logo-n.png'
-
 import { Fragment, useEffect, useState } from 'react';
 import { MovieData, fetchPopularMovies } from '../ApiHandler/popularFetch';
+
+
+let genreComparison = [28,14,878];
+let genreName = ["Action","Fantasy","Science Fiction"]
 
 function Popular() {
     const [popularMovies, setPopularMovies] = useState<MovieData[]>([]);
@@ -19,44 +22,62 @@ function Popular() {
                 console.error('Error fetching data:', error);
             }
         };
-
         fetchData();
     }, []);
 
-    let lastMovie = popularMovies[0]; 
+    if (popularMovies.length === 0) {
+        return <div>Loading...</div>; // or some other loading indicator
+    }
 
+    let lastMovie = popularMovies[0];
+
+    // Check if lastMovie is defined before trying to access its properties
+    if (!lastMovie || !lastMovie.genre_ids) {
+        return <div>No movie data available</div>; // or handle this case accordingly
+    }
+
+    let genre = lastMovie.genre_ids[0];
+    let finalGenre = "";
+    for(let i=0; i<genreComparison.length; i++){
+        if(genre === genreComparison[i]){
+             finalGenre =genreName[i];
+        }
+    }
 
     return (
-        <>
-            <div className={headerStyles.headerContainer} style={{ backgroundImage: `url({https://image.tmdb.org/t/p/w500${lastMovie.poster_path}})` }}>
-                {/* <div className={headerStyles.imageContainer}  ></div> */}
+        
+        <Fragment>
+        <div>
+          {lastMovie && (
+            <Fragment>
+                <div className={headerStyles.headerContainer}>
+               <img className={headerStyles.imageContainer}  src={`https://image.tmdb.org/t/p/w500${lastMovie.backdrop_path}`}alt={lastMovie.title}/>
                 <div className={headerStyles.contentContainer}>
-                    <img className={headerStyles.titleLogo} src={titleLogo} alt="" />
-                    <div className={headerStyles.title}><h2>Scarface</h2></div>
+                    <h2 className={headerStyles.titleLogo}>{lastMovie.title}</h2>
+                    <div className={headerStyles.title}><h2>{lastMovie.title}</h2></div>
                     <div className={headerStyles.movieInfo}>
                         <div className={headerStyles.date}>
-                            1983 |
+                            {lastMovie.release_date.slice(0,4)} |
                         </div>
                         <div className={headerStyles.maturity}>
-                            18+
+                          +16
                         </div>
                         <div className={headerStyles.duration}>
                             | 2h 49min |
                         </div>
                         <div className={headerStyles.genre}>
-                            Thrillers
+                            {finalGenre}
                         </div>
                     </div>
 
                     <div className={headerStyles.movieDescription}>
-                        In a ruthless rise to Miami drug lord,
-                        a Cuban-born gangster descends into addiction, obsession and brutality, with grisly consequences.
+                        {lastMovie.overview}
                     </div>
 
                     <div className={headerStyles.cast}>
                         <span>Starring : </span>
                         <div className={headerStyles.movieActor}>Al Pacino,</div>
-                        <div className={headerStyles.movieActor}>Al Pacino,</div>
+                        <div className={headerStyles.movieActor}>Leo decatto,</div>
                     </div>
 
                 </div>
@@ -73,9 +94,17 @@ function Popular() {
 
                     </div>
                 </div>
-            </div>
+                </div>
+            </Fragment>
+          )}
+        </div>
 
-        </>
+ 
+           
+
+   <Fragment/>
+   </Fragment>
+
 
     );
 }
