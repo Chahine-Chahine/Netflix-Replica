@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
 }
 
 body{
@@ -28,4 +27,12 @@ img {
 
 .pages-container{
   margin: 0px 60px;
+}
+
+.homepage{
+  background-color: black;
+
+}
+.morestyles{
+  background-color: #181818;
 }

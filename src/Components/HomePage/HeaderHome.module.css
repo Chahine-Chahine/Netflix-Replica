@@ -16,6 +16,7 @@
     height: 112vh;
     opacity: 0.7;
     position: absolute;
+    background-color: black;
 }
 
 .headerTitle{
@@ -135,4 +136,12 @@
 .arrowRight{
     background-color: red;
     height: 20px;
+}
+
+.homepage{
+    background-color: black;
+
+}
+.morestyles{
+    background-color: #181818;
 }

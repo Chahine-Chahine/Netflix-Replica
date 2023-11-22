@@ -28,7 +28,7 @@ function MoviePreview() {
 
     return (
         <>
-            
+            <div className={TextImage.homepage}>
             <HeaderHome />
             <TextThenImage title={titles[0]} text={texts[0]} image={image1} videoStyle={TextImage.firstvideoright}
                 videoSrc="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
@@ -38,6 +38,7 @@ function MoviePreview() {
             <ImageThenText title={titles[3]} text={texts[3]} image={image4}/>
             <div className="pages-container">
                 <Footer />
+            </div>
             </div>
       
           

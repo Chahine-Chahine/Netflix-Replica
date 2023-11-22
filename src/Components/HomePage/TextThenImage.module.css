@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 .textthenimage{
     height: 90vh;
     width: 100%;
@@ -31,13 +34,14 @@
 }
 
 .rightimage{
+    display: flex;
     width: 45%;
     background-color: black;
     position: relative;
 }
 
 .rightimageimage{
-    background-color: black;
+    z-index: 2;
     display: block;
 }
 
@@ -52,6 +56,7 @@
 }
 
 .firstvideoright{
+    z-index: 1;
     overflow: hidden;
     background: none;
     width: 100%;
@@ -65,6 +70,7 @@
 }
 
 .secondvideoright{
+    z-index: 1;
     overflow: hidden;
     background: none;
     width: 100%;
@@ -74,4 +80,8 @@
     position: absolute;
     top: 14%;
     left: 19%;
+}
+.homepage{
+    background-color: black;
+
 }
