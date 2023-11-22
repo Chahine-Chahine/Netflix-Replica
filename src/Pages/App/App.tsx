@@ -9,13 +9,14 @@ import Popular from '../../Components/ApiHandler/Popular';
 
 function App() {
   return (
-
+    
       <div>
+        
         <BrowserRouter>
           <Routes>
           <Route path="/" element={<HomePage />} />
             <Route path="/AllMoviesPage" element={<AllMoviesPage />} />
-            <Route path= {`/MoviePreviewPage`} element={<MoviePreview />} />
+            <Route path="/MoviePreview/:id" element={<MoviePreview />} />
           </Routes>
         </BrowserRouter>
       </div>

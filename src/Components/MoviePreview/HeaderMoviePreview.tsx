@@ -5,13 +5,17 @@ import titleLogo from './../../../src/assets/titleLogo.png'
 import logoN from './../../../src/assets/logo-n.png'
 import { Fragment, useEffect, useState } from 'react';
 import { MovieData, fetchPopularMovies } from '../ApiHandler/popularFetch';
+import {useParams} from 'react-router-dom';
 
 
-let genreComparison = [28,14,878];
-let genreName = ["Action","Fantasy","Science Fiction"]
+let genreComparison = [28,12,16,35,80,99,18,10751,14,36,27,10402,9648,10749,878,10770,53,10752];
+let genreName = ["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family"
+                ,"Fantasy","History","Horror","Music","Mystery","Romance","Science Fiction","TV Movie","Thriller","War","Western"]
 
 function Popular() {
     const [popularMovies, setPopularMovies] = useState<MovieData[]>([]);
+    const {id} = useParams();
+  console.log("in header preview",id)
 
     useEffect(() => {
         const fetchData = async () => {
@@ -23,13 +27,13 @@ function Popular() {
             }
         };
         fetchData();
-    }, []);
+    }, [Number(id)]);
 
     if (popularMovies.length === 0) {
         return <div>Loading...</div>; // or some other loading indicator
     }
 
-    let lastMovie = popularMovies[0];
+    let lastMovie = popularMovies[Number(id)];
 
     // Check if lastMovie is defined before trying to access its properties
     if (!lastMovie || !lastMovie.genre_ids) {
