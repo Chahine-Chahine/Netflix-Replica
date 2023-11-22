@@ -31,10 +31,10 @@ function MoviePreview() {
 
     const id_list = byId.slice(0, 7).map((id) =>
 
-        <Link to={`/MoviePreview/${id.id}`} className={moreLikeThisStyles.cardContainer}>
-            <img src={`https://image.tmdb.org/t/p/w500${id.backdrop_path}`} className={moreLikeThisStyles.card} alt="" />
-
+        <Link to={`/MoviePreview//${id.id}`} className={moreLikeThisStyles.cardContainer}>
+            <img src={`https://image.tmdb.org/t/p/w500${id.backdrop_path}`} className={moreLikeThisStyles.card} alt="" /> 
         </Link>
+       
 
     );
 
