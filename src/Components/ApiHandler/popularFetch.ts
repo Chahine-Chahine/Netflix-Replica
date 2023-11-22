@@ -15,7 +15,7 @@ export interface MovieData {
   genre_ids : [number];
 }
 
-export const fetchPopularMovies = async (): Promise<MovieData[]> => {
+export const fetchPopularMovies = async (id:number): Promise<MovieData[]> => {
   try {
     const response = await fetch(`${base_url}/movie/popular?api_key=${api_key}`);
     const data = await response.json();

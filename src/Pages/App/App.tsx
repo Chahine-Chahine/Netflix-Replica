@@ -10,7 +10,9 @@ import Popular from '../../Components/ApiHandler/Popular';
 function App() {
   return (
 
+    
       <div>
+        
         <BrowserRouter>
           <Routes>
           <Route path="/" element={<HomePage />} />

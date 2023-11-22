@@ -13,12 +13,15 @@ import {useParams} from 'react-router-dom';
 
 function MoviePreview() {
     let { id } = useParams();
+    let userId
     console.log(id)
     return (
         <>
             <NavBarPages />
             {/* <Popular /> */}
+            <HeaderMoviePreview/>
             <div className="pagesContainer">
+
                 <MoreLikeThis />
                 {/* Coming Soon Section */}
                 <div className={moviePreviewStyles.column}>
