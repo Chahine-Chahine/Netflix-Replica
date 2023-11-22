@@ -18,7 +18,7 @@ function MoviePreview() {
       }
     };
 
-    fetchDataId();
+    fetchDataId();  
   }, []);
 
   const id_list = byId.slice(0,7).map((id) =>   <img src={`https://image.tmdb.org/t/p/w500${id.backdrop_path}`} className={moreLikeThisStyles.card} alt="" />);
