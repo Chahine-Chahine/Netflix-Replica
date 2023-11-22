@@ -1,7 +1,7 @@
 import moreLikeThisStyles from '../../Components/MoviePreview/MoreLikeThis.module.css'
 import blurred from './../../../src/assets/blurred-bg.png'
 import { Link } from 'react-router-dom';
-import { IdData, fetchById } from '../ApiHandler/ById';
+import { IdData, fetchSimilarMovies } from '../ApiHandler/similar';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
@@ -19,7 +19,7 @@ function MoviePreview() {
 
         const fetchDataId = async () => {
             try {
-                const moviesData = await fetchById(Number(id));
+                const moviesData = await fetchSimilarMovies(Number(id));
                 setById(moviesData);
             } catch (error) {
                 console.error('Error fetching data:', error);

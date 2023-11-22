@@ -11,7 +11,7 @@ export interface IdData {
   backdrop_path: string;
 }
 
-export const fetchById = async (id: number): Promise<IdData[]> => {
+export const fetchSimilarMovies= async (id: number): Promise<IdData[]> => {
   try {
     const response = await fetch(`${base_url}/movie/${id}/similar?api_key=${api_key}`);
     const data = await response.json();
