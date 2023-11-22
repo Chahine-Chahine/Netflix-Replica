@@ -1,0 +1,64 @@
+.upperLinkText,.footerTitle{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(136, 126, 126);
+
+}
+
+.linksContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+
+.footerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(136, 126, 126);
+
+}
+
+.footerTitle{
+    margin: 40px 0px 20px;
+}
+
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.links a{
+    color: rgb(136, 126, 126);
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+.links a:hover,
+.upperLinkText:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.languageSelection{
+    border: 1px solid grey;
+    margin:20px 0px;
+    padding: 10px;
+    font-size: 14px;
+    
+}
+
+.languageSelection span{
+    padding: 0px 10px;
+    
+}
