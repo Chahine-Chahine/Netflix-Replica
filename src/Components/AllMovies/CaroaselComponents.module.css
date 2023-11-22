@@ -1,0 +1,131 @@
+.carouselContainer {
+	/* padding: 0px 27.938px 0px 27.938px; */
+	height: 265.33px;
+	width: 1165px;
+	margin: 0 30px 0 30px;
+}
+
+.filmContainer {
+	width: 299px;
+	height: 216.66px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	margin-left: 12px;
+}
+
+.filmTitle {
+	width: 299px;
+	height: 21.33px;
+	text-align: center;
+	margin: 2px 0 0 0;
+	color: white;
+	font-size: 16px;
+}
+
+
+.filmImageCharacteristics {
+	width: 299px;
+	height: 168px;
+}
+
+.genreTitle {
+	width: fit-content;
+	height: 22px;
+	cursor: pointer;
+	color: white;
+	padding: 0px 27.938px;
+	font-weight: 500;
+	font-size: 16px;
+	margin: 12px 12px 10px 12px; /* Adjusted margin between genre titles */
+}
+
+.allPage {
+	overflow-x: hidden;
+	background-color: #181818;
+	width: 100%;
+	height: 100vh;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+/* .scrollCharacteristics {
+	color: #e50914;
+	background-color: #181818;
+	width: fit-content;
+	height: fit-content;
+	border: 0cap;
+	align-items: center;
+	font-size: 16px;
+	position: fixed;
+} */
+
+/* .scrollButtons {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    position: relative;
+	gap:1200px;
+	margin-right: 10px;
+	
+	width: 30px;
+	height: 30px;
+  } */
+.Test{
+	display: flex;
+	width: 100%;
+	height: fit-content;
+	flex-direction: row;
+	align-items: center;
+}
+.filmContainerCharacteristic {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.leftScroll{
+	position: relative;
+	z-index: 2;
+}
+.rightScroll{
+
+}
+/* Media query for screens with a width between 600px and 900px */
+@media (min-width: 600px) {
+
+	.carouselContainer {
+		padding: 0px 18px 0px 18px;
+		height: 232px;
+		width: 564px;
+	}
+	
+	.filmContainer {
+		width: 240px;
+		height: 185px;
+	}
+	
+	.filmTitle {
+		width: 240px;
+		height: 21.33px;	
+	}
+	
+	
+	.filmImageCharacteristics {
+		width: 240px;
+		height: 135px;
+	}
+	
+	.genreTitle {
+		width: fit-content;
+		height: auto;
+		cursor: pointer;
+		color: white;
+		font-size: 16px;
+	}
+}
