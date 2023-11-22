@@ -1,8 +1,7 @@
-import React from 'react';
 import FilmsContainer from '../../Components/AllMovies/FilmsContainer';
 import style from "../../Components/AllMovies/CaroaselComponents.module.css";
 
-const App: React.FC = () => {
+const App= () => {
   return (
     
       <div className={style.allPage}>

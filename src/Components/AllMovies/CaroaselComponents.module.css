@@ -94,7 +94,8 @@
 	z-index: 2;
 }
 .rightScroll{
-
+	position: relative;
+	left: 200%;
 }
 /* Media query for screens with a width between 600px and 900px */
 @media (min-width: 600px) {
@@ -128,4 +129,32 @@
 		color: white;
 		font-size: 16px;
 	}
+}
+
+.headTextContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+	width: 600px;
+	height: 195x;
+}
+
+
+.headTitle{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+	margin-bottom: 10px;
+	width: 600px;
+	height: 57px;
+}
+
+.headParagraph{
+    color: white;
+    font-size: 19px;
+	width: 600px;
+	height: 76px;
+	margin-top: 1px;
 }
