@@ -1,14 +1,14 @@
 import { Fragment, useEffect, useState } from 'react';
-import { MovieData, fetchPopularMovies } from './popularFetch';
-import { fetchMovieGenre } from './getMovieGenre';
+import { GenreMovieData, fetchMovieGenre } from './getMovieGenre';
 
 function Discover() {
-  const [DiscoverGenre, setDiscoverGenre] = useState<MovieData[]>([]);
+  const [DiscoverGenre, setDiscoverGenre] = useState<GenreMovieData[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
+      let genre : number = 14;
       try {
-        const moviesData = await fetchMovieGenre(80);
+        const moviesData = await fetchMovieGenre(genre);
         setDiscoverGenre(moviesData);
       } catch (error) {
         console.error('Error fetching data:', error);
