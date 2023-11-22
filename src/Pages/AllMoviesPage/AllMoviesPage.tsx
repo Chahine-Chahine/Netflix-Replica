@@ -1,13 +1,27 @@
+import NavBarPages from '../../Components/Common/NavbarPages';
+import Footer from "../../Components/Common/Footer"
+import MoreToWatch from '../../Components/AllMovies/MoreToWatch';
+
+import footerStyles from  '../../Components/Common/Footer.module.css'
 import FilmsContainer from '../../Components/AllMovies/FilmsContainer';
 import style from "../../Components/AllMovies/CaroaselComponents.module.css";
 
-const App= () => {
-  return (
-    
-      <div className={style.allPage}>
+
+function AllMoviesPage() {
+    return (
+        <>
+            <NavBarPages/>
+            <MoreToWatch/>
+            <div className={style.allPage}>
         <FilmsContainer />
       </div>
-  );
-};
+            <div className="pagesContainer">
+            <h3 className={footerStyles.upperLinkText}>Read about Netflix TV shows and movies and watch bonus videos on Tudum.com.</h3>
+                <Footer />
+            </div>
 
-export default App;
+        </>
+    );
+}
+
+export default AllMoviesPage;
