@@ -6,15 +6,18 @@ import HeaderMoviePreview from '../../Components/MoviePreview/HeaderMoviePreview
 import Upcoming from "../../Components/MoviePreview/Upcoming";
 import moviePreviewStyles from "./MoviePreview.module.css";
 import Popular from '../../Components/MoviePreview/HeaderMoviePreview';
+import {useParams} from 'react-router-dom';
+
 
 
 
 function MoviePreview() {
-
+    let { id } = useParams();
+    console.log(id)
     return (
         <>
             <NavBarPages />
-            <Popular />
+            {/* <Popular /> */}
             <div className="pagesContainer">
                 <MoreLikeThis />
                 {/* Coming Soon Section */}

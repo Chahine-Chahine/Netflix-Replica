@@ -12,7 +12,7 @@ function MoviePreview() {
                 <h2>More Like This</h2>
             </div>
 
-            <Link to='../AllMoviesPage' className={moreLikeThisStyles.cardContainer}>
+            <Link to={`/MoviePreview/${4}`} className={moreLikeThisStyles.cardContainer}>
                 <img src={blurred} className={moreLikeThisStyles.card} alt="" />
                 <img src={blurred} className={moreLikeThisStyles.card} alt="" />
                 <img src={blurred} className={moreLikeThisStyles.card} alt="" />

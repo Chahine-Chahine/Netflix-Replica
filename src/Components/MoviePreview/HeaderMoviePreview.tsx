@@ -28,11 +28,11 @@ function Popular() {
 
     return (
         <>
-            <div className={headerStyles.headerContainer} style={{ backgroundImage: `url(${background})` }}>
+            <div className={headerStyles.headerContainer} style={{ backgroundImage: `url({https://image.tmdb.org/t/p/w500${lastMovie.poster_path}})` }}>
                 {/* <div className={headerStyles.imageContainer}  ></div> */}
                 <div className={headerStyles.contentContainer}>
                     <img className={headerStyles.titleLogo} src={titleLogo} alt="" />
-                    <div className={headerStyles.title}><h2>{lastMovie.title}</h2></div>
+                    <div className={headerStyles.title}><h2>Scarface</h2></div>
                     <div className={headerStyles.movieInfo}>
                         <div className={headerStyles.date}>
                             1983 |
