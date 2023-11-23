@@ -1,4 +1,3 @@
-// FilmsContainerComponent.tsx
 import style from "./CaroaselComponents.module.css";
 import Carousel from "./CarouselComponents";
 
