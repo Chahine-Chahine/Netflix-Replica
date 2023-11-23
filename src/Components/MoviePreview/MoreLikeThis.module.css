@@ -12,15 +12,15 @@
 }
 
 .cardContainer{
+    width: 30%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    /* justify-content: space-between; */
 }
 
-.card{
+.cardContainer > img{
+    width: 100%;
+    height: 100%;
     border: 1px solid red;
-    background-color: red;
-    padding:90px 170px;
 }

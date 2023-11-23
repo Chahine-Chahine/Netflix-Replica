@@ -40,11 +40,4 @@ function Popular() {
   );
 }
 
-export default Popular;
 
-// "original_title": "Oppenheimer",
-// "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
-// "popularity": 2590.24,
-// "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-// "release_date": "2023-07-19",
-// "title": "Oppenheimer",
