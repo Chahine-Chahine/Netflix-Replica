@@ -2,8 +2,8 @@
 
 .sectionSix{
   background-color: black;
-  height: 900px;
-  width: 100vw;
+  height: 1000px;
+  width: 100%;
 }
 
 .wrapper{
@@ -49,6 +49,7 @@
   transition: all 0.5s cubic-bezier(1,0,1,0);
   border-top: 2px solid black;
   padding-top: 10px;
+
 }
 
 h2{
