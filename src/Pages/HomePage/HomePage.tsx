@@ -9,11 +9,9 @@ import image2 from './../../assets/HR-factory03.jpg'
 import image3 from './../../assets/HR-factory06.png'
 import image4 from './../../assets/HR-factory07.png'
 import TextImage from '../../Components/HomePage/TextThenImage.module.css'
-
+import Accordion from "../../Components/Common/Accordion";
 import { Fragment, useEffect, useState } from "react";
-// import '../App/App.css'
-// import  '../../Components/Common/Footer.css'
-// import  '../../Components/Common/NavBarPages.css'
+
 
 
 
@@ -37,6 +35,7 @@ function MoviePreview() {
                 videoSrc="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" />
             <ImageThenText title={titles[3]} text={texts[3]} image={image4}/>
             <div className="pages-container">
+                <Accordion/>
                 <Footer />
             </div>
             </div>
