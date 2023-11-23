@@ -1,7 +1,8 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: beige;
 }
 
 body{
@@ -21,4 +22,4 @@ overflow-x: hidden;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */

@@ -8,6 +8,7 @@ import Popular from '../../Components/ApiHandler/Popular';
 
 
 function App() {
+  
   return (
 
       <div>
