@@ -78,26 +78,39 @@
 // export default Carousel;
 
 
-import { Film } from "./Film";
-import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import style from "../../Components/AllMovies/CaroaselComponents.module.css";
+import { useRef,Fragment, useEffect, useState } from 'react';
+import { GenreMovieData, fetchMovieGenre } from '../ApiHandler/getMovieGenre';
+
 
 interface CarouselProps {
-  films: Film[];
-  genre: string;
+	genre: number;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ films, genre }) => {
+const Carousel= (props:CarouselProps) => {
   const [swiperRef, setSwiperRef] = useState<any | null>(null);
+const [DiscoverGenre, setDiscoverGenre] = useState<GenreMovieData[]>([]);
 
+useEffect(() => {
+  const fetchData = async () => {
+    // let genre : number = 14;
+    try {
+      const moviesData = await fetchMovieGenre(props.genre);
+      setDiscoverGenre(moviesData);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  fetchData();
+}, []);
   return (
     <div className={style.carouselContainer}>
-      <p className={style.genreTitle}>{genre}</p>
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={4}
@@ -107,11 +120,11 @@ const Carousel: React.FC<CarouselProps> = ({ films, genre }) => {
         modules={[Navigation]}
         
       >
-        {films.map((film) => (
+        {DiscoverGenre.map((film) => (
           <SwiperSlide key={film.id}>
             <div className={style.filmContainer}>
               <img
-                src={film.imageUrl}
+                src={`https://image.tmdb.org/t/p/w500${film.poster_path}`}
                 alt={film.title}
                 className={style.filmImageCharacteristics}
               />
@@ -125,3 +138,5 @@ const Carousel: React.FC<CarouselProps> = ({ films, genre }) => {
 };
 
 export default Carousel;
+
+

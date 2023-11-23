@@ -1,12 +1,12 @@
 import { Fragment, useEffect, useState } from 'react';
 import { GenreMovieData, fetchMovieGenre } from './getMovieGenre';
 
-function Discover() {
+function Discover(genre:number) {
   const [DiscoverGenre, setDiscoverGenre] = useState<GenreMovieData[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      let genre : number = 14;
+      // let genre : number = genre;
       try {
         const moviesData = await fetchMovieGenre(genre);
         setDiscoverGenre(moviesData);
