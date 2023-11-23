@@ -15,10 +15,12 @@ function Discover(genre: number) {
 			}
 		};
 
-		fetchData();
-	}, []);
+    fetchData();
+  }, []);
+ 
 
-	let FirstMovie = DiscoverGenre[9];
+  
+  let FirstMovie = DiscoverGenre[8]; 
 
 	return (
 		<Fragment>
