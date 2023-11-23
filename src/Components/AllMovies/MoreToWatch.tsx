@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom';
 import blurred from './../../../src/assets/blurred-bg.png'
 import styles from './MoreToWatch.module.css';
-import footerStyles from  '../../Components/Common/Footer.module.css'
 
 function MoreToWatch() {
     return (
@@ -10,8 +9,8 @@ function MoreToWatch() {
 
         <div className={styles.moreToWatch}>
 
-            <div>
-                <img src={blurred} alt="" />
+            <div className={styles.img}>
+                <img  src={blurred} alt="" />
             </div>
 
             <div className={styles.moreToWatchBottom}>

@@ -29,3 +29,17 @@ body {
 .pagesContainer {
   margin: 0px 60px;
 }
+
+.swiper-button-prev:after, .swiper-button-next:after { 
+  
+  color: red; 
+  font-size: unset;
+  font-weight: bold;
+
+}
+
+.swiper-slide{
+  flex-shrink: unset;
+}
+
+

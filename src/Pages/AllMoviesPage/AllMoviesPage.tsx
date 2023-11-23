@@ -1,3 +1,8 @@
+import NavBarPages from "../../Components/Common/NavbarPages";
+import Footer from "../../Components/Common/Footer";
+import MoreToWatch from "../../Components/AllMovies/MoreToWatch";
+import footerStyles from "../../Components/Common/Footer.module.css";
+import FilmsContainer from "../../Components/AllMovies/FilmsContainer";
 import React from 'react';
 import FilmsContainer from '../../Components/AllMovies/FilmsContainer';
 import style from "../../Components/AllMovies/CaroaselComponents.module.css";
@@ -8,6 +13,7 @@ import footerStyles from "../../Components/Common/Footer.module.css"
 
 
 function AllMoviesPage() {
+	
     return (
         <>
             <NavBarPages/>
@@ -23,13 +29,5 @@ function AllMoviesPage() {
         </>
     );
 }
-// const App: React.FC = () => {
-//   return (
-    
-//       <div className={style.allPage}>
-//         <FilmsContainer />
-//       </div>
-//   );
-// };
 
 export default AllMoviesPage;
