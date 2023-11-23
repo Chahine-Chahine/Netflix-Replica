@@ -1,8 +1,9 @@
 .carouselContainer {
-	/* padding: 0px 27.938px 0px 27.938px; */
+	padding: 0px 27.938px 0px 27.938px;
 	height: 265.33px;
-	width: 100%;
 	margin: 0 30px 0 30px;
+	margin: 0px 70px;
+
 }
 
 .filmContainer {
@@ -37,81 +38,77 @@
 	padding: 0px 27.938px;
 	font-weight: 500;
 	font-size: 16px;
-	margin: 12px 12px 10px 12px; /* Adjusted margin between genre titles */
+	margin: 12px 12px 10px 12px;
 }
 
 .allPage {
-	overflow-x: hidden;
 	background-color: #181818;
 	width: 100%;
-	height: 100vh;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	font-weight: 300;
-}
 .filmContainerCharacteristic {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 }
 
 
-.headTextContainer{
-    display: flex;
-    flex-direction: column;
-    padding: 0 3%;
-	width: 600px;
-	height: 195x;
+.headTextContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 0 3%;
+	margin: 30px 70px;
+	overflow-x: hidden;
 }
 
-
-.headTitle{
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+.headTitle {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 900;
+	line-height: 1.2;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
 	margin-bottom: 10px;
 	width: 600px;
 	height: 57px;
 }
 
-.headParagraph{
-    color: white;
-    font-size: 19px;
-	width: 600px;
-	height: 76px;
+.headParagraph {
+	color: white;
+	font-size: 19px;
+	width: 30%;
+	/* height: 76px; */
 	margin-top: 1px;
 }
 
-@media (min-width: 600px) {
 
-	/* .carouselContainer {
-		padding: 0px 18px 0px 18px;
-		height: 232px;
-		width: 564px;
-	} */
-	
+@media (max-width: 800px) {
+
+	.headTitle {
+		font-size: 2rem;
+		width: auto;
+	}
+
+	.headParagraph {
+		width: auto;
+		font-size: 1rem;
+	}
+
+
 	.filmContainer {
 		width: 240px;
 		height: 185px;
 	}
-	
+
 	.filmTitle {
 		width: 240px;
-		height: 21.33px;	
+		height: 21.33px;
 	}
-	
-	
+
+
 	.filmImageCharacteristics {
 		width: 240px;
 		height: 135px;
 	}
-	
+
 	.genreTitle {
 		width: fit-content;
 		height: auto;
@@ -120,4 +117,3 @@
 		font-size: 16px;
 	}
 }
-
