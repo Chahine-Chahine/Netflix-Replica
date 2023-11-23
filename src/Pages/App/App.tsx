@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllMoviesPage from '../AllMoviesPage/AllMoviesPage';
-import MoviePreview from '../MoviePreviewPage/MoviePreviewPage';
+import MoviePreview from '../MoviePreview/MoviePreviewPage';
 import HomePage from '../HomePage/HomePage';
 
 import '../App/App.css'
-import Popular from '../../Components/ApiHandler/Popular';
+
 
 
 function App() {
