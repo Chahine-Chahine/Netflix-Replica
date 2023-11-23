@@ -28,7 +28,7 @@
 
 // 	return (
 // 		<div>
-			
+
 // 			<div className={style.carouselContainer}>
 // 				<p className={style.genreTitle}>{genre}</p>
 
@@ -99,13 +99,26 @@ const Carousel: React.FC<CarouselProps> = ({ films, genre }) => {
     <div className={style.carouselContainer}>
       <p className={style.genreTitle}>{genre}</p>
       <Swiper
+
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 2,
+          },
+        }}
         onSwiper={setSwiperRef}
-        slidesPerView={4}
-        centeredSlides={false}  
-        spaceBetween={5}      
+        // slidesPerView={4}
+        centeredSlides={false}
+        spaceBetween={5}
         navigation={true}
         modules={[Navigation]}
-      
+
       >
         {films.map((film) => (
           <SwiperSlide key={film.id}>
