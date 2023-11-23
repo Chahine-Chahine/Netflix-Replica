@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,600;1,8..144,400&family=Roboto:ital,wght@1,100&display=swap');
 
 .sectionSix{
+  transform: translateX(200px)translateY(80px);
   background-color: black;
-  height: 1000px;
+  height: 800px;
   width: 100%;
 }
 
@@ -16,6 +17,7 @@
 }
 .accordion{
   width: 500px;
+  transform: translateX(200px);
 }
 .item{
   background-color: rgb(45, 45, 45);
@@ -57,7 +59,7 @@ h2{
 }
 .headerpage1{
   color: white;
-  transform: translateX(280px) translatey(-40px);
+  transform: translateX(500px) translatey(-40px);
 }
 .pageOne{
   font-size: 50px;

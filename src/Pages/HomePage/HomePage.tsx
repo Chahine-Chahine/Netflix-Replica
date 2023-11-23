@@ -9,7 +9,7 @@ import image2 from './../../assets/HR-factory03.jpg'
 import image3 from './../../assets/HR-factory06.png'
 import image4 from './../../assets/HR-factory07.png'
 import TextImage from '../../Components/HomePage/TextThenImage.module.css'
-import Accordion from "../../Components/Common/Accordion";
+import Accordion from "../../Components/HomePage/Accordion";
 import { Fragment, useEffect, useState } from "react";
 
 
