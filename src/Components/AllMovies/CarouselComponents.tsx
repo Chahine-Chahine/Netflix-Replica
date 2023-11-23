@@ -7,6 +7,7 @@ import { Navigation } from 'swiper/modules';
 import style from "../../Components/AllMovies/CaroaselComponents.module.css";
 import { useRef,Fragment, useEffect, useState } from 'react';
 import { GenreMovieData, fetchMovieGenre } from '../ApiHandler/getMovieGenre';
+import { Link } from 'react-router-dom';
 
 
 interface CarouselProps {
@@ -57,11 +58,12 @@ useEffect(() => {
         {DiscoverGenre.map((film) => (
           <SwiperSlide key={film.id}>
             <div className={style.filmContainer}>
+            <Link to={`/MoviePreview/${film.id}`} >
               <img
                 src={`https://image.tmdb.org/t/p/w500${film.poster_path}`}
                 alt={film.title}
-                className={style.filmImageCharacteristics}
-              />
+                className={style.filmImageCharacteristics}/>
+                </Link>
               <div className={style.filmTitle}>{film.title}</div>
             </div>
           </SwiperSlide>
