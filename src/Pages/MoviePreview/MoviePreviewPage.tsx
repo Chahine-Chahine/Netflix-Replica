@@ -1,11 +1,15 @@
 import NavBarPages from '../../Components/Common/NavbarPages';
-import MoreDetails from '../../Components/MoviePreview/MoreDetails';
 import Footer from "../../Components/Common/Footer";
 import MoreLikeThis from "../../Components/MoviePreview/MoreLikeThis";
-import footerStyles from  '../../Components/Common/Footer.module.css'
-import { useParams } from 'react-router';
+import footerStyles from '../../Components/Common/Footer.module.css'
 import HeaderMoviePreview from '../../Components/MoviePreview/HeaderMoviePreview';
-import Upcoming from '../../Components/MoviePreview/Upcoming';
+import Upcoming from "../../Components/MoviePreview/Upcoming";
+import moviePreviewStyles from "./MoviePreview.module.css";
+import Popular from '../../Components/MoviePreview/HeaderMoviePreview';
+import {useParams} from 'react-router-dom';
+import MoreDetails from '../../Components/MoviePreview/MoreDetails';
+
+
 
 
 function MoviePreview() {
@@ -14,19 +18,22 @@ function MoviePreview() {
     console.log(id)
     return (
         <>
-        <div>
             <NavBarPages />
             <HeaderMoviePreview/>
-                <MoreDetails/>
+            <MoreDetails/>
             <div className="pagesContainer">
-                <MoreLikeThis/>
-                </div>
-                <div className='wrapper'>
-                <Upcoming/>
+
+                <MoreLikeThis />
+                {/* Coming Soon Section */}
+                <div className={moviePreviewStyles.column}>
+                    <div className={moviePreviewStyles.title}>Comming Soon</div>
+                    <div className={moviePreviewStyles.cardContainer}>
+                        <Upcoming />
+                        {/* Coming Soon Section */}
+                    </div>
                 </div>
                 <Footer />
             </div>
-        
 
         </>
 
