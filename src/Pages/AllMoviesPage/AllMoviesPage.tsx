@@ -3,11 +3,13 @@ import Footer from "../../Components/Common/Footer"
 import MoreToWatch from '../../Components/AllMovies/MoreToWatch';
 
 import footerStyles from  '../../Components/Common/Footer.module.css'
+import Discover from '../../Components/ApiHandler/Genre';
 
 
 function AllMoviesPage() {
     return (
         <>
+        <Discover></Discover>
             <NavBarPages/>
             <MoreToWatch/>
             <div className="pagesContainer">
