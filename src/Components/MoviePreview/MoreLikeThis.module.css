@@ -1,0 +1,38 @@
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.title{
+    color: white;
+    margin:20px 0px;
+    font-size: 20px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cardContainer img{
+    height: 180px;
+}
+
+.trailerTitle{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+   .title{
+    font-size: 14px;
+   }
+
+}
+

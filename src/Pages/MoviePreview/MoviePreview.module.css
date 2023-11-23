@@ -1,0 +1,18 @@
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.title{
+    color: white;
+    font-size: 32px;
+    height: auto;
+    transform: translateX(40px)translateY(60px);
+    margin-bottom: 50px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}

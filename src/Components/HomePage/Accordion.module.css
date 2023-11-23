@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,600;1,8..144,400&family=Roboto:ital,wght@1,100&display=swap');
+
+.sectionSix{
+  transform: translateX(200px)translateY(80px);
+  background-color: black;
+  height: 800px;
+  width: 100%;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  /* height: 700px; */
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+}
+.accordion{
+  width: 500px;
+  transform: translateX(200px);
+}
+.item{
+  background-color: rgb(45, 45, 45);
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  width: 1200px;
+
+}
+.title{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.content{
+  color: white;
+  font-size: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+  font-family: "Roboto Serif";
+  font-weight: 300px;
+  margin-top: 10px;
+  
+}
+
+.content.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+  border-top: 2px solid black;
+  padding-top: 10px;
+
+}
+
+h2{
+  color: white;
+}
+.headerpage1{
+  color: white;
+  transform: translateX(500px) translatey(-40px);
+}
+.pageOne{
+  font-size: 50px;
+}
+.sectionCreate{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 400px;
+  margin-top: 10px;
+}
+.arrowRight{
+  background-color: red;
+  height: 20px;
+}
+.inputButton{
+  background: none;
+  width: 60%;
+  margin-top: 5px;
+  height: 3.7rem;
+
+}
+.buttonEmail{
+  height: 100%;
+  width: 32%;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  padding: 13px;
+}
+.emailPlaceHolder{
+  padding: 15px 120px;
+  font-size: 25px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 20px;
+}
+/* @media screen and (min-width: 1024px) {
+  .accordion {
+    width: 30%;
+  }
+  .item {
+    flex-direction: row;
+  }
+  .content {
+    flex: 1;
+    margin-left: 10px;
+    display: block;
+  }
+  .content.show{
+    flex-wrap: wrap;
+  }
+} */

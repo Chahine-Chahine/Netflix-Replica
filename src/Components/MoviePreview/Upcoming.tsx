@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { UpcomingMovieData, fetchUpcomingMovies } from "../ApiHandler/getupcoming";
-import "./Upcoming.css"
+import upcomingStyles from "./Upcoming.module.css"
 
 function Upcoming() {
   const [upcomingMovies, setUpcomingMovies] = useState<UpcomingMovieData[]>([]);
@@ -20,10 +20,11 @@ function Upcoming() {
 
   return (
     <>
-      {upcomingMovies.map((movie) => (
-        <div className="upcoming-card">
-          <div className="upcoming-title">{movie.title}</div>
-          <div className="upcoming-description">{movie.overview}</div>
+
+      {upcomingMovies.slice(1,8).map((movie) => (
+        <div className={upcomingStyles.upcomingCard}>
+          <div className={upcomingStyles.upcomingTitle}>{movie.title}</div>
+          <div className={upcomingStyles.upcomingDescription}>{movie.overview}</div>
         </div>
       ))}
     </>

@@ -1,0 +1,148 @@
+.headerContainer{
+    background-image: url("../../assets/HeaderHomeBg.jpg");
+    width: 100%;
+    height: 112vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: -160px -180px;
+    background-size: 125%;
+    flex-wrap: wrap;
+}
+
+.headerContainerShadow{
+    width: 100vw;
+    height: 112vh;
+    opacity: 0.7;
+    position: absolute;
+    background-color: black;
+}
+
+.headerTitle{
+    color: white;
+    background: none;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.headerTextContainer{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.headerFirstP{
+    color: white;
+    background: none;
+    margin: 12px;
+    font-size: 25px;
+}
+
+.headerSecondP{
+    color: white;
+    background: none;
+    margin: 12px;
+    font-size: 22px;
+}
+
+.headerInput{
+    color: white;
+    height: 100%;
+    border-radius: 5px;
+    border: rgb(148, 148, 148) solid 1px;
+    padding: 10px;
+    width: 66%;
+    opacity: 0.9;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.headerButton{
+    height: 100%;
+    width: 32%;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.inputButton{
+    background: none;
+    width: 60%;
+    margin-top: 5px;
+    height: 3.7rem;
+
+}
+
+.homeHeaderNav{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+
+.homeLogo{
+    width: 20%;
+    background: none;
+}
+
+.homeNavs{
+    display: flex;
+    align-items: center;
+    background: none;
+    margin-right: 30px;
+}
+
+.signupButton{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    height: 40%;
+    padding: 0 19px;
+
+}
+
+.navLanguageSelection{
+    font-size: 18px;
+    color: white;   
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 40%;
+    padding: 3px 20px;
+    margin-right: 25px;
+}
+
+.breakDiv{
+    width: 100%;
+    height: 9px;
+    background-color: rgb(50, 50, 50);
+}
+
+.selectedLanguage{
+    margin: 0 15px;
+}
+
+.arrowRight{
+    background-color: red;
+    height: 20px;
+}
+
+.homepage{
+    background-color: black;
+
+}
+.morestyles{
+    background-color: #181818;
+}

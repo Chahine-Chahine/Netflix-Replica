@@ -1,0 +1,86 @@
+.navBarPages{
+    width:100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 30px;
+    color: white;
+    /* position:fixed; */
+}
+
+.navBarPages,
+.navBarPagesLeft,
+.navBarPagesLeft img,
+.navBarPagesRight,
+.navBarPages-text{
+    background-color: black;
+}
+
+
+.navBarPagesLeft img{
+    width: 9vw;  
+    cursor: pointer;
+}
+
+.navBarPagesRight{
+    display: flex;
+    gap: 8px;
+    align-items: center; 
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.btnLogin , .btnSignIn{
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+
+.btnLogin{
+    padding: 10px 25px;
+    background-color: 	#E50914;
+
+}
+.btnSignIn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 7px 20px;
+  
+}
+
+.btnLogin:hover{
+    background-color: 	#f62a34;
+}
+
+.btnSignIn:hover{
+    background-color: rgba(255, 255, 255,0.2);
+}
+
+
+
+/* media query */
+@media only screen and (max-width: 800px) {
+
+    .navBarPages{
+        padding: 8px;
+    }
+
+    .navBarPagesText{
+        display: none;
+    
+    }
+
+    .navBarPagesLeft img{
+        width: 30vw;
+    }
+
+
+    .btnLogin, .btnSignIn{
+        padding: 8px 25px;
+        font-size: 8px;
+    }
+    
+  }

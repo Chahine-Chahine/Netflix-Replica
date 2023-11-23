@@ -8,6 +8,7 @@ export interface GenreMovieData {
   title: string;
   overview : string;
   release_date: string;
+  genre_id : number;
 }
 
 export const fetchMovieGenre = async (genre: number): Promise<GenreMovieData[]> => {
@@ -15,7 +16,7 @@ export const fetchMovieGenre = async (genre: number): Promise<GenreMovieData[]> 
     const response = await fetch(`${base_url}/discover/movie?api_key=${api_key}&with_genres= ${genre}`);
     const data = await response.json();
 
-    if (response.ok) {
+    if (response) {
       return data.results;
     } else {
       throw new Error(`Error fetching popular movies: ${data.message}`);
