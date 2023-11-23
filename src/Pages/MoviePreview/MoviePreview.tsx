@@ -23,7 +23,7 @@ function MoviePreview() {
             <div className='center'>
                 <p className='purple-bold'>Movie Preview Page.</p>
             </div>
-            {/* <Popular/> */}
+           
           
         </>
 

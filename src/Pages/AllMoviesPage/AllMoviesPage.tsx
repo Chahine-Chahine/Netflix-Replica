@@ -12,7 +12,6 @@ function AllMoviesPage() {
 	
     return (
         <>
-        <Discover></Discover>
             <NavBarPages/>
             <div className={style.allPage}>
                 <FilmsContainer />

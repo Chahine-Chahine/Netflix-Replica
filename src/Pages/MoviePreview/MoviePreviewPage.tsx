@@ -5,6 +5,7 @@ import MoreLikeThis from "../../Components/MoviePreview/MoreLikeThis";
 import footerStyles from  '../../Components/Common/Footer.module.css'
 import { useParams } from 'react-router';
 import HeaderMoviePreview from '../../Components/MoviePreview/HeaderMoviePreview';
+import Upcoming from '../../Components/MoviePreview/Upcoming';
 
 
 function MoviePreview() {
@@ -13,15 +14,19 @@ function MoviePreview() {
     console.log(id)
     return (
         <>
-        {/* <div className={headerhome.morestyles}> */}
+        <div>
             <NavBarPages />
-            {/* <Popular /> */}
             <HeaderMoviePreview/>
+                <MoreDetails/>
             <div className="pagesContainer">
                 <MoreLikeThis/>
+                </div>
+                <div className='wrapper'>
+                <Upcoming/>
+                </div>
                 <Footer />
             </div>
-        {/* </div> */}
+        
 
         </>
 
