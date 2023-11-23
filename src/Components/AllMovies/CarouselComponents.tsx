@@ -1,16 +1,14 @@
-import React, { useState } from "react";
-import { Film } from "./Film";
-import style from "../../Components/AllMovies/CaroaselComponents.module.css";
 import { useRef,Fragment, useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import style from "../../Components/AllMovies/CaroaselComponents.module.css";
+import {Mousewheel, Navigation } from 'swiper/modules';
 import { GenreMovieData, fetchMovieGenre } from '../ApiHandler/getMovieGenre';
 import { Link } from 'react-router-dom';
 
 
-
-// import required modules
-import {Mousewheel, Navigation } from 'swiper/modules';
-
-import { Film } from "./Film";
 
 interface CarouselProps {
 	genre: number;
