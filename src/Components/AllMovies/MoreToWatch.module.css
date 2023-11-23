@@ -13,6 +13,9 @@
     color: white;
 }
 
+.img{
+  margin: 0px 70px;
+}
 
 .btnLogin {
     border-radius: 2px;

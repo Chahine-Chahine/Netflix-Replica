@@ -102,10 +102,10 @@ const Carousel: React.FC<CarouselProps> = ({ films, genre }) => {
         onSwiper={setSwiperRef}
         slidesPerView={4}
         centeredSlides={false}  
-        spaceBetween={0}      
+        spaceBetween={5}      
         navigation={true}
         modules={[Navigation]}
-        
+      
       >
         {films.map((film) => (
           <SwiperSlide key={film.id}>

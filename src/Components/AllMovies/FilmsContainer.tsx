@@ -45,6 +45,7 @@ const filmCategories: { genre: string; films: Film[] }[] = [
 		
 		],
 	},
+
 	// Add more genres as needed
 	{
 		genre: "Drama",
