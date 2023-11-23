@@ -20,7 +20,7 @@ function NavBarPages() {
                 <Link to='../AllMoviesPage' className={navbarStyles.btnLogin}>
                     JOIN NOW
                 </Link>
-                <Link to={`../MoviePreview/${19}`} className={navbarStyles.btnSignIn}>
+                <Link to='../' className={navbarStyles.btnSignIn}>
                     SIGN IN
                 </Link>
             </div>
