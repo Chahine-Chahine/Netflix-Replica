@@ -3,6 +3,7 @@ import logo from './../../assets/logo-navbarPages.png'
 import { SlArrowDown } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import { FaGlobe } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function HeaderHome(){
     return(
@@ -18,7 +19,7 @@ function HeaderHome(){
                             <span className={headerStyles.selectedLanguage}>English</span>
                             <SlArrowDown />
                         </div>
-                        <button className={headerStyles.signupButton}>Sign In </button>
+                        <button  className={headerStyles.signupButton}>Sign In </button>
                     </div>
             </div>
             <div className={headerStyles.headerTextContainer}>
@@ -27,7 +28,9 @@ function HeaderHome(){
                 <p className={headerStyles.headerSecondP}>Ready to watch? Enter your email to create or restart your membership.</p>
                 <div className={headerStyles.inputButton}>
                     <input type='text' placeholder='Email address' className={headerStyles.headerInput}/>
+                    <Link  to='../AllMoviesPage'>
                     <button className={headerStyles.headerButton}>Get Started  <SlArrowRight className={headerStyles.arrowRight}/></button>
+                    </Link>
                 </div>
             </div>
         </div>

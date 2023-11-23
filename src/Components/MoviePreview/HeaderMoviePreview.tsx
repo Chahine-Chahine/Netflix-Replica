@@ -36,7 +36,7 @@ function Popular() {
     let lastMovie = popularMovies[Number(id)];
     // Check if lastMovie is defined before trying to access its properties
     if (!lastMovie || !lastMovie.genre_ids) {
-        return <div>No movie data available</div>; // or handle this case accordingly
+        return <div className={headerStyles.captionHeader}>No movie data available</div>; // or handle this case accordingly
     }
 
     let genre = lastMovie.genre_ids[0];

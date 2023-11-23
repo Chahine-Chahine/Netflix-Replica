@@ -48,9 +48,9 @@ useEffect(() => {
           },
         }}
         onSwiper={setSwiperRef}
-        // slidesPerView={4}
+        slidesPerView={4}
         centeredSlides={false}
-        spaceBetween={5}
+        spaceBetween={0}
         navigation={true}
         modules={[Navigation]}
 
