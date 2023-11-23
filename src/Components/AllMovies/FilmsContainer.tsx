@@ -37,7 +37,7 @@ const FilmsContainer = () => {
 					
 					return (
 						<div>
-							<p>{genreName}</p>
+							<p className={style.genreTitle}>{genreName}</p>
 							<Carousel genre={genreId}/>
 						</div>
 					);
